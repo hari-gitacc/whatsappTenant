@@ -1,0 +1,3703 @@
+@keyframes animation-3541160 {
+  from {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    overflow: hidden;
+    background: #282828ff;
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    border-radius: 10px 10px 10px 10px;
+    background: #213227ff;
+    box-sizing: border-box;
+    border-left: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-right: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-top: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-bottom: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+  }
+}
+.animationClass-3541160 {
+  animation: animation-3541160 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-pdiv-3541160 {
+  from {
+    width: var(--custom-width);
+    height: calc(0.65 * var(--custom-width));
+  }
+  to {
+    width: calc(230 * var(--ratio));
+    height: calc(48 * var(--ratio));
+  }
+}
+
+.parent-animation-3541160 {
+  animation: animation-pdiv-3541160 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-10185 {
+  from {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    border-radius: 10px 10px 10px 10px;
+    background: #213227ff;
+    box-sizing: border-box;
+    border-left: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-right: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-top: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-bottom: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    overflow: hidden;
+    background: #282828ff;
+  }
+}
+.animationClassBack-10185 {
+  animation: animationBack-10185 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-pdiv-10185 {
+  from {
+    width: var(--custom-width);
+    height: calc(0.21 * var(--custom-width));
+  }
+  to {
+    width: calc(1512px * var(--ratio));
+    height: calc(981 * var(--ratio));
+  }
+}
+
+.parent-animation-rev-10185 {
+  animation: animation-pdiv-10185 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-9335 {
+  from {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    overflow: hidden;
+    background: #000000ff;
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+    background: #000000ff;
+  }
+}
+.animationClass-9335 {
+  animation: animation-9335 0.2s linear 0s normal forwards;
+}
+@keyframes animation-pdiv-9335 {
+  from {
+    width: var(--custom-width);
+    height: calc(9.63 * var(--custom-width));
+  }
+  to {
+    width: calc(320 * var(--ratio));
+    height: calc(982 * var(--ratio));
+  }
+}
+
+.parent-animation-9335 {
+  animation: animation-pdiv-9335 0.2s linear 0s normal forwards;
+}
+@keyframes animationBack-9336 {
+  from {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+    background: #000000ff;
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    overflow: hidden;
+    background: #000000ff;
+  }
+}
+.animationClassBack-9336 {
+  animation: animationBack-9336 0.2s linear 0s normal forwards;
+}
+@keyframes animation-pdiv-9336 {
+  from {
+    width: var(--custom-width);
+    height: calc(3.07 * var(--custom-width));
+  }
+  to {
+    width: calc(102px * var(--ratio));
+    height: calc(982 * var(--ratio));
+  }
+}
+
+.parent-animation-rev-9336 {
+  animation: animation-pdiv-9336 0.2s linear 0s normal forwards;
+}
+@keyframes animation-9336 {
+  from {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+    background: #000000ff;
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    overflow: hidden;
+    background: #000000ff;
+  }
+}
+.animationClass-9336 {
+  animation: animation-9336 0.2s linear 0s normal forwards;
+}
+@keyframes animation-pdiv-9336 {
+  from {
+    width: var(--custom-width);
+    height: calc(3.07 * var(--custom-width));
+  }
+  to {
+    width: calc(102 * var(--ratio));
+    height: calc(982 * var(--ratio));
+  }
+}
+
+.parent-animation-9336 {
+  animation: animation-pdiv-9336 0.2s linear 0s normal forwards;
+}
+@keyframes animation-176 {
+  from {
+    width: 239.22%;
+    height: 4.99%;
+    top: 6.42%;
+    left: 30.39%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 76.25%;
+    height: 4.99%;
+    top: 6.42%;
+    left: 9.69%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+  }
+}
+.animationClass-176 {
+  animation: animation-176 0.2s linear 0s normal forwards;
+}
+@keyframes animationBack-9296 {
+  from {
+    width: 76.25%;
+    height: 4.99%;
+    top: 6.42%;
+    left: 9.69%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 239.22%;
+    height: 4.99%;
+    top: 6.42%;
+    left: 30.39%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+  }
+}
+.animationClassBack-9296 {
+  animation: animationBack-9296 0.2s linear 0s normal forwards;
+}
+@keyframes animation-9296 {
+  from {
+    width: 76.25%;
+    height: 4.99%;
+    top: 6.42%;
+    left: 9.69%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 239.22%;
+    height: 4.99%;
+    top: 6.42%;
+    left: 30.39%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+  }
+}
+.animationClass-9296 {
+  animation: animation-9296 0.2s linear 0s normal forwards;
+}
+@keyframes animation-34 {
+  from {
+    width: 65.98%;
+    height: 65.31%;
+    top: 18.37%;
+    left: 29.92%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  to {
+    width: 65.98%;
+    height: 65.31%;
+    top: 18.37%;
+    left: 29.92%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+}
+.animationClass-34 {
+  animation: animation-34 0.2s linear 0s normal forwards;
+}
+@keyframes animation-34-34-0 {
+  from {
+    font-size: calc(31 * var(--ratio));
+    font-family: Josefin Sans;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-transform: none;
+
+    line-height: calc(32 * var(--ratio));
+    color: #ffffffff;
+  }
+  to {
+    font-size: calc(31 * var(--ratio));
+    font-family: Josefin Sans;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-transform: none;
+
+    line-height: calc(32 * var(--ratio));
+    color: #ffffffff;
+  }
+}
+
+.animationClass-34-34-0 {
+  animation: animation-34-34-0 0.2s linear 0s normal forwards;
+}
+@keyframes animationBack-9299 {
+  from {
+    width: 65.98%;
+    height: 65.31%;
+    top: 18.37%;
+    left: 29.92%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  to {
+    width: 65.98%;
+    height: 65.31%;
+    top: 18.37%;
+    left: 29.92%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+}
+.animationClassBack-9299 {
+  animation: animationBack-9299 0.2s linear 0s normal forwards;
+}
+@keyframes animation-9299 {
+  from {
+    width: 65.98%;
+    height: 65.31%;
+    top: 18.37%;
+    left: 29.92%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  to {
+    width: 65.98%;
+    height: 65.31%;
+    top: 18.37%;
+    left: 29.92%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+}
+.animationClass-9299 {
+  animation: animation-9299 0.2s linear 0s normal forwards;
+}
+@keyframes animation-9299-9299-0 {
+  from {
+    font-size: calc(31 * var(--ratio));
+    font-family: Josefin Sans;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-transform: none;
+
+    line-height: calc(32 * var(--ratio));
+    color: #ffffffff;
+  }
+  to {
+    font-size: calc(31 * var(--ratio));
+    font-family: Josefin Sans;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-transform: none;
+
+    line-height: calc(32 * var(--ratio));
+    color: #ffffffff;
+  }
+}
+
+.animationClass-9299-9299-0 {
+  animation: animation-9299-9299-0 0.2s linear 0s normal forwards;
+}
+@keyframes animation-949 {
+  from {
+    width: 11.48%;
+    height: 57.14%;
+    top: 22.45%;
+    left: 6.15%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 11.48%;
+    height: 57.14%;
+    top: 22.45%;
+    left: 6.15%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClass-949 {
+  animation: animation-949 0.2s linear 0s normal forwards;
+}
+@keyframes animationBack-9297 {
+  from {
+    width: 11.48%;
+    height: 57.14%;
+    top: 22.45%;
+    left: 6.15%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 11.48%;
+    height: 57.14%;
+    top: 22.45%;
+    left: 6.15%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClassBack-9297 {
+  animation: animationBack-9297 0.2s linear 0s normal forwards;
+}
+@keyframes animation-9297 {
+  from {
+    width: 11.48%;
+    height: 57.14%;
+    top: 22.45%;
+    left: 6.15%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 11.48%;
+    height: 57.14%;
+    top: 22.45%;
+    left: 6.15%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClass-9297 {
+  animation: animation-9297 0.2s linear 0s normal forwards;
+}
+@keyframes animation-950 {
+  from {
+    width: 83.33%;
+    height: 79.17%;
+    top: 12.5%;
+    left: 8.33%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 83.33%;
+    height: 79.17%;
+    top: 12.5%;
+    left: 8.33%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClass-950 {
+  animation: animation-950 0.2s linear 0s normal forwards;
+}
+@keyframes animationBg-9298 {
+  from {
+    background-image: var(--image-13);
+    opacity: 1;
+  }
+  to {
+    background-image: var(--image-13);
+  }
+}
+.bgClass-9298 {
+  animation: animationBg-9298 0.2s linear 0s normal forwards;
+}
+@keyframes animationBack-9298 {
+  from {
+    width: 83.33%;
+    height: 79.17%;
+    top: 12.5%;
+    left: 8.33%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 83.33%;
+    height: 79.17%;
+    top: 12.5%;
+    left: 8.33%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClassBack-9298 {
+  animation: animationBack-9298 0.2s linear 0s normal forwards;
+}
+@keyframes animationBgBack-950 {
+  from {
+    background-image: var(--image-13);
+    opacity: 1;
+  }
+  to {
+    background-image: var(--image-13);
+  }
+}
+.bgClassBack-950 {
+  animation: animationBgBack-950 0.2s linear 0s normal forwards;
+}
+@keyframes animation-9298 {
+  from {
+    width: 83.33%;
+    height: 79.17%;
+    top: 12.5%;
+    left: 8.33%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 83.33%;
+    height: 79.17%;
+    top: 12.5%;
+    left: 8.33%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClass-9298 {
+  animation: animation-9298 0.2s linear 0s normal forwards;
+}
+@keyframes animationBg-950 {
+  from {
+    background-image: var(--image-13);
+    opacity: 1;
+  }
+  to {
+    background-image: var(--image-13);
+  }
+}
+.bgClass-950 {
+  animation: animationBg-950 0.2s linear 0s normal forwards;
+}
+@keyframes animation-10131 {
+  from {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    border-radius: 10px 10px 10px 10px;
+    background: #213227ff;
+    box-sizing: border-box;
+    border-left: 1px solid linear-gradient(90deg, #32483aff 38%, #96ba08ff 84%);
+    border-right: 1px solid linear-gradient(90deg, #32483aff 38%, #96ba08ff 84%);
+    border-top: 1px solid linear-gradient(90deg, #32483aff 38%, #96ba08ff 84%);
+    border-bottom: 1px solid
+      linear-gradient(90deg, #32483aff 38%, #96ba08ff 84%);
+  }
+}
+.animationClass-10131 {
+  animation: animation-10131 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-pdiv-10131 {
+  from {
+    width: var(--custom-width);
+    height: calc(0.21 * var(--custom-width));
+  }
+  to {
+    width: calc(230 * var(--ratio));
+    height: calc(48 * var(--ratio));
+  }
+}
+
+.parent-animation-10131 {
+  animation: animation-pdiv-10131 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-10133 {
+  from {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    border-radius: 10px 10px 10px 10px;
+    background: #213227ff;
+    box-sizing: border-box;
+    border-left: 1px solid linear-gradient(90deg, #32483aff 38%, #96ba08ff 84%);
+    border-right: 1px solid linear-gradient(90deg, #32483aff 38%, #96ba08ff 84%);
+    border-top: 1px solid linear-gradient(90deg, #32483aff 38%, #96ba08ff 84%);
+    border-bottom: 1px solid
+      linear-gradient(90deg, #32483aff 38%, #96ba08ff 84%);
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+}
+.animationClassBack-10133 {
+  animation: animationBack-10133 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-pdiv-10133 {
+  from {
+    width: var(--custom-width);
+    height: calc(0.21 * var(--custom-width));
+  }
+  to {
+    width: calc(230px * var(--ratio));
+    height: calc(48 * var(--ratio));
+  }
+}
+
+.parent-animation-rev-10133 {
+  animation: animation-pdiv-10133 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-10128 {
+  from {
+    width: 12.17%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 6.52%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 12.17%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 6.52%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClass-10128 {
+  animation: animation-10128 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-10134 {
+  from {
+    width: 12.17%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 6.52%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 12.17%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 6.52%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClassBack-10134 {
+  animation: animationBack-10134 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-10129 {
+  from {
+    width: 100%;
+    height: 95.83%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 100%;
+    height: 95.83%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClass-10129 {
+  animation: animation-10129 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBg-10135 {
+  from {
+    background-image: var(--image-6);
+    opacity: 1;
+  }
+  to {
+    background-image: var(--image-6);
+  }
+}
+.bgClass-10135 {
+  animation: animationBg-10135 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-10135 {
+  from {
+    width: 100%;
+    height: 95.83%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 100%;
+    height: 95.83%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClassBack-10135 {
+  animation: animationBack-10135 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBgBack-10129 {
+  from {
+    background-image: var(--image-6);
+    opacity: 1;
+  }
+  to {
+    background-image: var(--image-6);
+  }
+}
+.bgClassBack-10129 {
+  animation: animationBgBack-10129 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-10130 {
+  from {
+    width: 28.26%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 31.74%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  to {
+    width: 28.26%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 31.74%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+}
+.animationClass-10130 {
+  animation: animation-10130 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-10130-10130-0 {
+  from {
+    font-size: calc(23 * var(--ratio));
+    font-family: Roboto;
+    font-weight: 400;
+
+    text-decoration: none;
+    text-transform: none;
+
+    line-height: calc(24 * var(--ratio));
+    color: #ffffffff;
+  }
+  to {
+    font-size: calc(23 * var(--ratio));
+    font-family: Roboto;
+    font-weight: 400;
+
+    text-decoration: none;
+    text-transform: none;
+
+    line-height: calc(24 * var(--ratio));
+    color: #ffffffff;
+  }
+}
+
+.animationClass-10130-10130-0 {
+  animation: animation-10130-10130-0 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-10136 {
+  from {
+    width: 28.26%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 31.74%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  to {
+    width: 28.26%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 31.74%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+}
+.animationClassBack-10136 {
+  animation: animationBack-10136 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-9193 {
+  from {
+    width: 225.49%;
+    height: 4.89%;
+    top: 15.17%;
+    left: 30.39%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 71.88%;
+    height: 4.89%;
+    top: 15.17%;
+    left: 9.69%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+}
+.animationClass-9193 {
+  animation: animation-9193 0.2s linear 0s normal forwards;
+}
+@keyframes animation-9300 {
+  from {
+    width: 71.88%;
+    height: 4.89%;
+    top: 15.17%;
+    left: 9.69%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 225.49%;
+    height: 4.89%;
+    top: 15.17%;
+    left: 30.39%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+}
+.animationClass-9300 {
+  animation: animation-9300 0.2s linear 0s normal forwards;
+}
+@keyframes animation-10172 {
+  from {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    border-radius: 10px 10px 10px 10px;
+    background: #213227ff;
+    box-sizing: border-box;
+    border-left: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-right: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-top: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-bottom: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+  }
+}
+.animationClass-10172 {
+  animation: animation-10172 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-pdiv-10172 {
+  from {
+    width: var(--custom-width);
+    height: calc(0.21 * var(--custom-width));
+  }
+  to {
+    width: calc(230 * var(--ratio));
+    height: calc(48 * var(--ratio));
+  }
+}
+
+.parent-animation-10172 {
+  animation: animation-pdiv-10172 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-10174 {
+  from {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    border-radius: 10px 10px 10px 10px;
+    background: #213227ff;
+    box-sizing: border-box;
+    border-left: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-right: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-top: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-bottom: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+}
+.animationClassBack-10174 {
+  animation: animationBack-10174 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-pdiv-10174 {
+  from {
+    width: var(--custom-width);
+    height: calc(0.21 * var(--custom-width));
+  }
+  to {
+    width: calc(230px * var(--ratio));
+    height: calc(48 * var(--ratio));
+  }
+}
+
+.parent-animation-rev-10174 {
+  animation: animation-pdiv-10174 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-10165 {
+  from {
+    width: 12.17%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 6.52%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 12.17%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 6.52%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClass-10165 {
+  animation: animation-10165 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-10175 {
+  from {
+    width: 12.17%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 6.52%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 12.17%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 6.52%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClassBack-10175 {
+  animation: animationBack-10175 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-10166 {
+  from {
+    width: 79.17%;
+    height: 83.33%;
+    top: 8.33%;
+    left: 12.5%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 79.17%;
+    height: 83.33%;
+    top: 8.33%;
+    left: 12.5%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClass-10166 {
+  animation: animation-10166 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBg-10176 {
+  from {
+    background-image: var(--image-7);
+    opacity: 1;
+  }
+  to {
+    background-image: var(--image-7);
+  }
+}
+.bgClass-10176 {
+  animation: animationBg-10176 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-10176 {
+  from {
+    width: 79.17%;
+    height: 83.33%;
+    top: 8.33%;
+    left: 12.5%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 79.17%;
+    height: 83.33%;
+    top: 8.33%;
+    left: 12.5%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClassBack-10176 {
+  animation: animationBack-10176 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBgBack-10166 {
+  from {
+    background-image: var(--image-7);
+    opacity: 1;
+  }
+  to {
+    background-image: var(--image-7);
+  }
+}
+.bgClassBack-10166 {
+  animation: animationBgBack-10166 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-10167 {
+  from {
+    width: 50.87%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 31.74%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  to {
+    width: 50.87%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 31.74%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+}
+.animationClass-10167 {
+  animation: animation-10167 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-10167-10167-0 {
+  from {
+    font-size: calc(23 * var(--ratio));
+    font-family: Roboto;
+    font-weight: 400;
+
+    text-decoration: none;
+    text-transform: none;
+
+    line-height: calc(24 * var(--ratio));
+    color: #ffffffff;
+  }
+  to {
+    font-size: calc(23 * var(--ratio));
+    font-family: Roboto;
+    font-weight: 400;
+
+    text-decoration: none;
+    text-transform: none;
+
+    line-height: calc(24 * var(--ratio));
+    color: #ffffffff;
+  }
+}
+
+.animationClass-10167-10167-0 {
+  animation: animation-10167-10167-0 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-10177 {
+  from {
+    width: 50.87%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 31.74%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  to {
+    width: 50.87%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 31.74%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+}
+.animationClassBack-10177 {
+  animation: animationBack-10177 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-9206 {
+  from {
+    width: 225.49%;
+    height: 4.89%;
+    top: 25.46%;
+    left: 30.39%;
+    opacity: 1;
+    z-index: 2;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 71.88%;
+    height: 4.89%;
+    top: 25.46%;
+    left: 9.69%;
+    opacity: 1;
+    z-index: 2;
+    transform: rotate(0deg);
+  }
+}
+.animationClass-9206 {
+  animation: animation-9206 0.2s linear 0s normal forwards;
+}
+@keyframes animation-9301 {
+  from {
+    width: 71.88%;
+    height: 4.89%;
+    top: 25.46%;
+    left: 9.69%;
+    opacity: 1;
+    z-index: 2;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 225.49%;
+    height: 4.89%;
+    top: 25.46%;
+    left: 30.39%;
+    opacity: 1;
+    z-index: 2;
+    transform: rotate(0deg);
+  }
+}
+.animationClass-9301 {
+  animation: animation-9301 0.2s linear 0s normal forwards;
+}
+@keyframes animation-9143 {
+  from {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    border-radius: 10px 10px 10px 10px;
+    background: #213227ff;
+    box-sizing: border-box;
+    border-left: 1px solid linear-gradient(90deg, #32483aff 47%, #96ba08ff 100%);
+    border-right: 1px solid
+      linear-gradient(90deg, #32483aff 47%, #96ba08ff 100%);
+    border-top: 1px solid linear-gradient(90deg, #32483aff 47%, #96ba08ff 100%);
+    border-bottom: 1px solid
+      linear-gradient(90deg, #32483aff 47%, #96ba08ff 100%);
+  }
+}
+.animationClass-9143 {
+  animation: animation-9143 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-pdiv-9143 {
+  from {
+    width: var(--custom-width);
+    height: calc(0.21 * var(--custom-width));
+  }
+  to {
+    width: calc(230 * var(--ratio));
+    height: calc(48 * var(--ratio));
+  }
+}
+
+.parent-animation-9143 {
+  animation: animation-pdiv-9143 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-9145 {
+  from {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    border-radius: 10px 10px 10px 10px;
+    background: #213227ff;
+    box-sizing: border-box;
+    border-left: 1px solid linear-gradient(90deg, #32483aff 47%, #96ba08ff 100%);
+    border-right: 1px solid
+      linear-gradient(90deg, #32483aff 47%, #96ba08ff 100%);
+    border-top: 1px solid linear-gradient(90deg, #32483aff 47%, #96ba08ff 100%);
+    border-bottom: 1px solid
+      linear-gradient(90deg, #32483aff 47%, #96ba08ff 100%);
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+}
+.animationClassBack-9145 {
+  animation: animationBack-9145 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-pdiv-9145 {
+  from {
+    width: var(--custom-width);
+    height: calc(0.21 * var(--custom-width));
+  }
+  to {
+    width: calc(230px * var(--ratio));
+    height: calc(48 * var(--ratio));
+  }
+}
+
+.parent-animation-rev-9145 {
+  animation: animation-pdiv-9145 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-9140 {
+  from {
+    width: 16.52%;
+    height: 79.17%;
+    top: 10.42%;
+    left: 6.52%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 16.52%;
+    height: 79.17%;
+    top: 10.42%;
+    left: 6.52%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+  }
+}
+.animationClass-9140 {
+  animation: animation-9140 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-9146 {
+  from {
+    width: 16.52%;
+    height: 79.17%;
+    top: 10.42%;
+    left: 6.52%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 16.52%;
+    height: 79.17%;
+    top: 10.42%;
+    left: 6.52%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+  }
+}
+.animationClassBack-9146 {
+  animation: animationBack-9146 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-9141 {
+  from {
+    width: 73.68%;
+    height: 73.68%;
+    top: 13.16%;
+    left: 0%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 73.68%;
+    height: 73.68%;
+    top: 13.16%;
+    left: 0%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClass-9141 {
+  animation: animation-9141 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBg-9147 {
+  from {
+    background-image: url("./images/image0.png");
+    opacity: 1;
+  }
+  to {
+    background-image: url("./images/image0.png");
+    opacity: 1;
+  }
+}
+.bgClass-9147 {
+  animation: animationBg-9147 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-9147 {
+  from {
+    width: 73.68%;
+    height: 73.68%;
+    top: 13.16%;
+    left: 0%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 73.68%;
+    height: 73.68%;
+    top: 13.16%;
+    left: 0%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClassBack-9147 {
+  animation: animationBack-9147 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBgBack-9141 {
+  from {
+    background-image: url("./images/image0.png");
+    opacity: 1;
+  }
+  to {
+    background-image: url("./images/image0.png");
+    opacity: 1;
+  }
+}
+.bgClassBack-9141 {
+  animation: animationBgBack-9141 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-9142 {
+  from {
+    width: 31.3%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 36.09%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  to {
+    width: 31.3%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 36.09%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+}
+.animationClass-9142 {
+  animation: animation-9142 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-9142-9142-0 {
+  from {
+    font-size: calc(23 * var(--ratio));
+    font-family: Roboto;
+    font-weight: 400;
+
+    text-decoration: none;
+    text-transform: none;
+
+    line-height: calc(24 * var(--ratio));
+    color: #ffffffff;
+  }
+  to {
+    font-size: calc(23 * var(--ratio));
+    font-family: Roboto;
+    font-weight: 400;
+
+    text-decoration: none;
+    text-transform: none;
+
+    line-height: calc(24 * var(--ratio));
+    color: #ffffffff;
+  }
+}
+
+.animationClass-9142-9142-0 {
+  animation: animation-9142-9142-0 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-9148 {
+  from {
+    width: 31.3%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 36.09%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  to {
+    width: 31.3%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 36.09%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+}
+.animationClassBack-9148 {
+  animation: animationBack-9148 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-10230 {
+  from {
+    width: 225.49%;
+    height: 4.89%;
+    top: 35.74%;
+    left: 30.39%;
+    opacity: 1;
+    z-index: 3;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 71.88%;
+    height: 4.89%;
+    top: 35.74%;
+    left: 9.69%;
+    opacity: 1;
+    z-index: 3;
+    transform: rotate(0deg);
+  }
+}
+.animationClass-10230 {
+  animation: animation-10230 0.2s linear 0s normal forwards;
+}
+@keyframes animation-9302 {
+  from {
+    width: 71.88%;
+    height: 4.89%;
+    top: 35.74%;
+    left: 9.69%;
+    opacity: 1;
+    z-index: 3;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 225.49%;
+    height: 4.89%;
+    top: 35.74%;
+    left: 30.39%;
+    opacity: 1;
+    z-index: 3;
+    transform: rotate(0deg);
+  }
+}
+.animationClass-9302 {
+  animation: animation-9302 0.2s linear 0s normal forwards;
+}
+@keyframes animation-10183 {
+  from {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    border-radius: 10px 10px 10px 10px;
+    background: #213227ff;
+    box-sizing: border-box;
+    border-left: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-right: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-top: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-bottom: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+  }
+}
+.animationClass-10183 {
+  animation: animation-10183 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-pdiv-10183 {
+  from {
+    width: var(--custom-width);
+    height: calc(0.21 * var(--custom-width));
+  }
+  to {
+    width: calc(230 * var(--ratio));
+    height: calc(48 * var(--ratio));
+  }
+}
+
+.parent-animation-10183 {
+  animation: animation-pdiv-10183 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-10185 {
+  from {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    border-radius: 10px 10px 10px 10px;
+    background: #213227ff;
+    box-sizing: border-box;
+    border-left: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-right: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-top: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-bottom: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+}
+.animationClassBack-10185 {
+  animation: animationBack-10185 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-pdiv-10185 {
+  from {
+    width: var(--custom-width);
+    height: calc(0.21 * var(--custom-width));
+  }
+  to {
+    width: calc(230px * var(--ratio));
+    height: calc(48 * var(--ratio));
+  }
+}
+
+.parent-animation-rev-10185 {
+  animation: animation-pdiv-10185 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-10179 {
+  from {
+    width: 11.41%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 6.52%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 11.41%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 6.52%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClass-10179 {
+  animation: animation-10179 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-10186 {
+  from {
+    width: 11.41%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 6.52%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 11.41%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 6.52%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClassBack-10186 {
+  animation: animationBack-10186 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-10181 {
+  from {
+    width: 89.55%;
+    height: 35.71%;
+    top: 25.89%;
+    left: 6.79%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  to {
+    width: 89.55%;
+    height: 35.71%;
+    top: 25.89%;
+    left: 6.79%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+}
+.animationClass-10181 {
+  animation: animation-10181 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBg-10188 {
+  from {
+    background-image: var(--image-9);
+    opacity: 1;
+  }
+  to {
+    background-image: var(--image-9);
+  }
+}
+.bgClass-10188 {
+  animation: animationBg-10188 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-10188 {
+  from {
+    width: 89.55%;
+    height: 35.71%;
+    top: 25.89%;
+    left: 6.79%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  to {
+    width: 89.55%;
+    height: 35.71%;
+    top: 25.89%;
+    left: 6.79%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+}
+.animationClassBack-10188 {
+  animation: animationBack-10188 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBgBack-10181 {
+  from {
+    background-image: var(--image-9);
+    opacity: 1;
+  }
+  to {
+    background-image: var(--image-9);
+  }
+}
+.bgClassBack-10181 {
+  animation: animationBgBack-10181 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-10180 {
+  from {
+    width: 23.93%;
+    height: 35.71%;
+    top: 38.39%;
+    left: 3.66%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  to {
+    width: 23.93%;
+    height: 35.71%;
+    top: 38.39%;
+    left: 3.66%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+}
+.animationClass-10180 {
+  animation: animation-10180 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBg-10187 {
+  from {
+    background-image: var(--image-10);
+    opacity: 1;
+  }
+  to {
+    background-image: var(--image-10);
+  }
+}
+.bgClass-10187 {
+  animation: animationBg-10187 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-10187 {
+  from {
+    width: 23.93%;
+    height: 35.71%;
+    top: 38.39%;
+    left: 3.66%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  to {
+    width: 23.93%;
+    height: 35.71%;
+    top: 38.39%;
+    left: 3.66%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+}
+.animationClassBack-10187 {
+  animation: animationBack-10187 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBgBack-10180 {
+  from {
+    background-image: var(--image-10);
+    opacity: 1;
+  }
+  to {
+    background-image: var(--image-10);
+  }
+}
+.bgClassBack-10180 {
+  animation: animationBgBack-10180 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-10182 {
+  from {
+    width: 36.09%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 30.98%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  to {
+    width: 36.09%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 30.98%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+}
+.animationClass-10182 {
+  animation: animation-10182 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-10182-10182-0 {
+  from {
+    font-size: calc(23 * var(--ratio));
+    font-family: Roboto;
+    font-weight: 400;
+
+    text-decoration: none;
+    text-transform: none;
+
+    line-height: calc(24 * var(--ratio));
+    color: #ffffffff;
+  }
+  to {
+    font-size: calc(23 * var(--ratio));
+    font-family: Roboto;
+    font-weight: 400;
+
+    text-decoration: none;
+    text-transform: none;
+
+    line-height: calc(24 * var(--ratio));
+    color: #ffffffff;
+  }
+}
+
+.animationClass-10182-10182-0 {
+  animation: animation-10182-10182-0 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-10189 {
+  from {
+    width: 36.09%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 30.98%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  to {
+    width: 36.09%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 30.98%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+}
+.animationClassBack-10189 {
+  animation: animationBack-10189 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-9224 {
+  from {
+    width: 225.49%;
+    height: 4.89%;
+    top: 46.03%;
+    left: 30.39%;
+    opacity: 1;
+    z-index: 4;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 71.88%;
+    height: 4.89%;
+    top: 46.03%;
+    left: 9.69%;
+    opacity: 1;
+    z-index: 4;
+    transform: rotate(0deg);
+  }
+}
+.animationClass-9224 {
+  animation: animation-9224 0.2s linear 0s normal forwards;
+}
+@keyframes animation-9303 {
+  from {
+    width: 71.88%;
+    height: 4.89%;
+    top: 46.03%;
+    left: 9.69%;
+    opacity: 1;
+    z-index: 4;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 225.49%;
+    height: 4.89%;
+    top: 46.03%;
+    left: 30.39%;
+    opacity: 1;
+    z-index: 4;
+    transform: rotate(0deg);
+  }
+}
+.animationClass-9303 {
+  animation: animation-9303 0.2s linear 0s normal forwards;
+}
+@keyframes animation-9248 {
+  from {
+    width: 225.49%;
+    height: 4.89%;
+    top: 56.31%;
+    left: 30.39%;
+    opacity: 1;
+    z-index: 5;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 71.88%;
+    height: 4.89%;
+    top: 56.31%;
+    left: 9.69%;
+    opacity: 1;
+    z-index: 5;
+    transform: rotate(0deg);
+  }
+}
+.animationClass-9248 {
+  animation: animation-9248 0.2s linear 0s normal forwards;
+}
+@keyframes animation-9304 {
+  from {
+    width: 71.88%;
+    height: 4.89%;
+    top: 56.31%;
+    left: 9.69%;
+    opacity: 1;
+    z-index: 5;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 225.49%;
+    height: 4.89%;
+    top: 56.31%;
+    left: 30.39%;
+    opacity: 1;
+    z-index: 5;
+    transform: rotate(0deg);
+  }
+}
+.animationClass-9304 {
+  animation: animation-9304 0.2s linear 0s normal forwards;
+}
+@keyframes animation-9186 {
+  from {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    border-radius: 10px 10px 10px 10px;
+    background: #213227ff;
+    box-sizing: border-box;
+    border-left: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-right: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-top: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-bottom: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+  }
+}
+.animationClass-9186 {
+  animation: animation-9186 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-pdiv-9186 {
+  from {
+    width: var(--custom-width);
+    height: calc(0.21 * var(--custom-width));
+  }
+  to {
+    width: calc(230 * var(--ratio));
+    height: calc(48 * var(--ratio));
+  }
+}
+
+.parent-animation-9186 {
+  animation: animation-pdiv-9186 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-9188 {
+  from {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    border-radius: 10px 10px 10px 10px;
+    background: #213227ff;
+    box-sizing: border-box;
+    border-left: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-right: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-top: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-bottom: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+}
+.animationClassBack-9188 {
+  animation: animationBack-9188 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-pdiv-9188 {
+  from {
+    width: var(--custom-width);
+    height: calc(0.21 * var(--custom-width));
+  }
+  to {
+    width: calc(230px * var(--ratio));
+    height: calc(48 * var(--ratio));
+  }
+}
+
+.parent-animation-rev-9188 {
+  animation: animation-pdiv-9188 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-9183 {
+  from {
+    width: 12.17%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 6.52%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 12.17%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 6.52%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClass-9183 {
+  animation: animation-9183 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-9189 {
+  from {
+    width: 12.17%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 6.52%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 12.17%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 6.52%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClassBack-9189 {
+  animation: animationBack-9189 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-9184 {
+  from {
+    width: 81.21%;
+    height: 85.42%;
+    top: 7.29%;
+    left: 9.4%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 81.21%;
+    height: 85.42%;
+    top: 7.29%;
+    left: 9.4%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClass-9184 {
+  animation: animation-9184 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBg-9190 {
+  from {
+    background-image: var(--image-8);
+    opacity: 1;
+  }
+  to {
+    background-image: var(--image-8);
+  }
+}
+.bgClass-9190 {
+  animation: animationBg-9190 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-9190 {
+  from {
+    width: 81.21%;
+    height: 85.42%;
+    top: 7.29%;
+    left: 9.4%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 81.21%;
+    height: 85.42%;
+    top: 7.29%;
+    left: 9.4%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClassBack-9190 {
+  animation: animationBack-9190 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBgBack-9184 {
+  from {
+    background-image: var(--image-8);
+    opacity: 1;
+  }
+  to {
+    background-image: var(--image-8);
+  }
+}
+.bgClassBack-9184 {
+  animation: animationBgBack-9184 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-9185 {
+  from {
+    width: 38.26%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 31.74%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  to {
+    width: 38.26%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 31.74%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+}
+.animationClass-9185 {
+  animation: animation-9185 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-9185-9185-0 {
+  from {
+    font-size: calc(23 * var(--ratio));
+    font-family: Roboto;
+    font-weight: 400;
+
+    text-decoration: none;
+    text-transform: none;
+
+    line-height: calc(24 * var(--ratio));
+    color: #ffffffff;
+  }
+  to {
+    font-size: calc(23 * var(--ratio));
+    font-family: Roboto;
+    font-weight: 400;
+
+    text-decoration: none;
+    text-transform: none;
+
+    line-height: calc(24 * var(--ratio));
+    color: #ffffffff;
+  }
+}
+
+.animationClass-9185-9185-0 {
+  animation: animation-9185-9185-0 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-9191 {
+  from {
+    width: 38.26%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 31.74%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  to {
+    width: 38.26%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 31.74%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+}
+.animationClassBack-9191 {
+  animation: animationBack-9191 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-9266 {
+  from {
+    width: 225.49%;
+    height: 4.89%;
+    top: 66.6%;
+    left: 30.39%;
+    opacity: 1;
+    z-index: 6;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 71.88%;
+    height: 4.89%;
+    top: 66.6%;
+    left: 9.69%;
+    opacity: 1;
+    z-index: 6;
+    transform: rotate(0deg);
+  }
+}
+.animationClass-9266 {
+  animation: animation-9266 0.2s linear 0s normal forwards;
+}
+@keyframes animation-9305 {
+  from {
+    width: 71.88%;
+    height: 4.89%;
+    top: 66.6%;
+    left: 9.69%;
+    opacity: 1;
+    z-index: 6;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 225.49%;
+    height: 4.89%;
+    top: 66.6%;
+    left: 30.39%;
+    opacity: 1;
+    z-index: 6;
+    transform: rotate(0deg);
+  }
+}
+.animationClass-9305 {
+  animation: animation-9305 0.2s linear 0s normal forwards;
+}
+@keyframes animation-10206 {
+  from {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    border-radius: 10px 10px 10px 10px;
+    background: #213227ff;
+    box-sizing: border-box;
+    border-left: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-right: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-top: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-bottom: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+  }
+}
+.animationClass-10206 {
+  animation: animation-10206 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-pdiv-10206 {
+  from {
+    width: var(--custom-width);
+    height: calc(0.19 * var(--custom-width));
+  }
+  to {
+    width: calc(247 * var(--ratio));
+    height: calc(48 * var(--ratio));
+  }
+}
+
+.parent-animation-10206 {
+  animation: animation-pdiv-10206 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-10208 {
+  from {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    border-radius: 10px 10px 10px 10px;
+    background: #213227ff;
+    box-sizing: border-box;
+    border-left: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-right: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-top: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+    border-bottom: 1px solid linear-gradient(90deg, #32483aff 3%, #a7cd0fff 99%);
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+}
+.animationClassBack-10208 {
+  animation: animationBack-10208 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-pdiv-10208 {
+  from {
+    width: var(--custom-width);
+    height: calc(0.19 * var(--custom-width));
+  }
+  to {
+    width: calc(247px * var(--ratio));
+    height: calc(48 * var(--ratio));
+  }
+}
+
+.parent-animation-rev-10208 {
+  animation: animation-pdiv-10208 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-10202 {
+  from {
+    width: 11.34%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 6.07%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 11.34%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 6.07%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClass-10202 {
+  animation: animation-10202 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-10209 {
+  from {
+    width: 11.34%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 6.07%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 11.34%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 6.07%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClassBack-10209 {
+  animation: animationBack-10209 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-10203 {
+  from {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClass-10203 {
+  animation: animation-10203 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBg-10210 {
+  from {
+    background-image: var(--image-11);
+    opacity: 1;
+  }
+  to {
+    background-image: var(--image-11);
+  }
+}
+.bgClass-10210 {
+  animation: animationBg-10210 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-10210 {
+  from {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClassBack-10210 {
+  animation: animationBack-10210 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBgBack-10203 {
+  from {
+    background-image: var(--image-11);
+    opacity: 1;
+  }
+  to {
+    background-image: var(--image-11);
+  }
+}
+.bgClassBack-10203 {
+  animation: animationBgBack-10203 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-10204 {
+  from {
+    width: 83.33%;
+    height: 83.33%;
+    top: 8.33%;
+    left: 8.33%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 83.33%;
+    height: 83.33%;
+    top: 8.33%;
+    left: 8.33%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClass-10204 {
+  animation: animation-10204 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBg-10211 {
+  from {
+    background-image: var(--image-12);
+    opacity: 1;
+  }
+  to {
+    background-image: var(--image-12);
+  }
+}
+.bgClass-10211 {
+  animation: animationBg-10211 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-10211 {
+  from {
+    width: 83.33%;
+    height: 83.33%;
+    top: 8.33%;
+    left: 8.33%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    width: 83.33%;
+    height: 83.33%;
+    top: 8.33%;
+    left: 8.33%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClassBack-10211 {
+  animation: animationBack-10211 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBgBack-10204 {
+  from {
+    background-image: var(--image-12);
+    opacity: 1;
+  }
+  to {
+    background-image: var(--image-12);
+  }
+}
+.bgClassBack-10204 {
+  animation: animationBgBack-10204 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-10205 {
+  from {
+    width: 64.37%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 29.55%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  to {
+    width: 64.37%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 29.55%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+}
+.animationClass-10205 {
+  animation: animation-10205 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-10205-10205-0 {
+  from {
+    font-size: calc(23 * var(--ratio));
+    font-family: Roboto;
+    font-weight: 400;
+
+    text-decoration: none;
+    text-transform: none;
+
+    line-height: calc(24 * var(--ratio));
+    color: #ffffffff;
+  }
+  to {
+    font-size: calc(23 * var(--ratio));
+    font-family: Roboto;
+    font-weight: 400;
+
+    text-decoration: none;
+    text-transform: none;
+
+    line-height: calc(24 * var(--ratio));
+    color: #ffffffff;
+  }
+}
+
+.animationClass-10205-10205-0 {
+  animation: animation-10205-10205-0 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-10212 {
+  from {
+    width: 64.37%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 29.55%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  to {
+    width: 64.37%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 29.55%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+}
+.animationClassBack-10212 {
+  animation: animationBack-10212 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-9281 {
+  from {
+    width: 242.16%;
+    height: 4.89%;
+    top: 76.88%;
+    left: 30.39%;
+    opacity: 1;
+    z-index: 7;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 77.19%;
+    height: 4.89%;
+    top: 76.88%;
+    left: 9.69%;
+    opacity: 1;
+    z-index: 7;
+    transform: rotate(0deg);
+  }
+}
+.animationClass-9281 {
+  animation: animation-9281 0.2s linear 0s normal forwards;
+}
+@keyframes animation-9306 {
+  from {
+    width: 77.19%;
+    height: 4.89%;
+    top: 76.88%;
+    left: 9.69%;
+    opacity: 1;
+    z-index: 7;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 242.16%;
+    height: 4.89%;
+    top: 76.88%;
+    left: 30.39%;
+    opacity: 1;
+    z-index: 7;
+    transform: rotate(0deg);
+  }
+}
+.animationClass-9306 {
+  animation: animation-9306 0.2s linear 0s normal forwards;
+}
+@keyframes animation-3541281 {
+  from {
+    width: 6.75%;
+    height: 100.1%;
+    top: -0.1%;
+    left: -1.92%;
+    opacity: 1;
+    z-index: 2;
+    transform: rotate(0deg);
+    overflow: hidden;
+    background: #000000ff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.animationClass-3541281 {
+  animation: animation-3541281 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-6401186 {
+  from {
+    width: 20.3%;
+    height: 6.22%;
+    top: 2.24%;
+    left: 13.76%;
+    opacity: 1;
+    z-index: 7;
+    transform: rotate(0deg);
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.animationClass-6401186 {
+  animation: animation-6401186 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-null6401186 {
+  from {
+    opacity: 0;
+    z-index: -10;
+  }
+  to {
+    width: 20.3%;
+    height: 6.22%;
+    top: 2.24%;
+    left: 13.76%;
+    opacity: 1;
+    z-index: 7;
+    transform: rotate(0deg);
+  }
+}
+.animationClassBack-null6401186 {
+  animation: animationBack-null6401186 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-6401179 {
+  from {
+    width: 28.77%;
+    height: 3.06%;
+    top: 3.36%;
+    left: 67%;
+    opacity: 1;
+    z-index: 16;
+    transform: rotate(0deg);
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.animationClass-6401179 {
+  animation: animation-6401179 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-null6401179 {
+  from {
+    opacity: 0;
+    z-index: -10;
+  }
+  to {
+    width: 28.77%;
+    height: 3.06%;
+    top: 3.36%;
+    left: 67%;
+    opacity: 1;
+    z-index: 16;
+    transform: rotate(0deg);
+  }
+}
+.animationClassBack-null6401179 {
+  animation: animationBack-null6401179 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-3541345 {
+  from {
+    width: 1.91%;
+    height: 2.27%;
+    top: 4.44%;
+    left: 7.54%;
+    opacity: 1;
+    z-index: 4;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.animationClass-3541345 {
+  animation: animation-3541345 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-null3541345 {
+  from {
+    opacity: 0;
+    z-index: -10;
+  }
+  to {
+    width: 1.91%;
+    height: 2.27%;
+    top: 4.44%;
+    left: 7.54%;
+    opacity: 1;
+    z-index: 4;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClassBack-null3541345 {
+  animation: animationBack-null3541345 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBgBack-3541345 {
+  from {
+    opacity: 1;
+  }
+  to {
+    background-image: var(--image-14);
+  }
+}
+.bgClassBack-3541345 {
+  animation: animationBgBack-3541345 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-6401178 {
+  from {
+    width: 89.95%;
+    height: 12.33%;
+    top: 10.6%;
+    left: 7.01%;
+    opacity: 1;
+    z-index: 6;
+    transform: rotate(0deg);
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.animationClass-6401178 {
+  animation: animation-6401178 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-null6401178 {
+  from {
+    opacity: 0;
+    z-index: -10;
+  }
+  to {
+    width: 89.95%;
+    height: 12.33%;
+    top: 10.6%;
+    left: 7.01%;
+    opacity: 1;
+    z-index: 6;
+    transform: rotate(0deg);
+  }
+}
+.animationClassBack-null6401178 {
+  animation: animationBack-null6401178 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-3541346 {
+  from {
+    width: 1.92%;
+    height: 3.67%;
+    top: 15.29%;
+    left: 63.03%;
+    opacity: 1;
+    z-index: 5;
+    transform: rotate(0deg);
+    text-align: center;
+    line-height: 0px;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.animationClass-3541346 {
+  animation: animation-3541346 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-null3541346 {
+  from {
+    opacity: 0;
+    z-index: -10;
+  }
+  to {
+    width: 1.92%;
+    height: 3.67%;
+    top: 15.29%;
+    left: 63.03%;
+    opacity: 1;
+    z-index: 5;
+    transform: rotate(0deg);
+    text-align: center;
+    line-height: 0px;
+  }
+}
+.animationClassBack-null3541346 {
+  animation: animationBack-null3541346 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-null10186 {
+  from {
+    opacity: 0;
+    z-index: -10;
+  }
+  to {
+    width: 11.41%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 6.52%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+.animationClass-null10186 {
+  animation: animation-null10186 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-10186 {
+  from {
+    width: 11.41%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 6.52%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.animationClassBack-10186 {
+  animation: animationBack-10186 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-null10188 {
+  from {
+    opacity: 0;
+    z-index: -10;
+  }
+  to {
+    width: 89.55%;
+    height: 35.71%;
+    top: 25.89%;
+    left: 6.79%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+}
+.animationClass-null10188 {
+  animation: animation-null10188 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBg-10188 {
+  from {
+    opacity: 1;
+  }
+  to {
+    background-image: var(--image-9);
+  }
+}
+.bgClass-10188 {
+  animation: animationBg-10188 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-10188 {
+  from {
+    width: 89.55%;
+    height: 35.71%;
+    top: 25.89%;
+    left: 6.79%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.animationClassBack-10188 {
+  animation: animationBack-10188 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-null10187 {
+  from {
+    opacity: 0;
+    z-index: -10;
+  }
+  to {
+    width: 23.93%;
+    height: 35.71%;
+    top: 38.39%;
+    left: 3.66%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+}
+.animationClass-null10187 {
+  animation: animation-null10187 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBg-10187 {
+  from {
+    opacity: 1;
+  }
+  to {
+    background-image: var(--image-10);
+  }
+}
+.bgClass-10187 {
+  animation: animationBg-10187 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-10187 {
+  from {
+    width: 23.93%;
+    height: 35.71%;
+    top: 38.39%;
+    left: 3.66%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.animationClassBack-10187 {
+  animation: animationBack-10187 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-null10189 {
+  from {
+    opacity: 0;
+    z-index: -10;
+  }
+  to {
+    width: 36.09%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 30.98%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+}
+.animationClass-null10189 {
+  animation: animation-null10189 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-10189 {
+  from {
+    width: 36.09%;
+    height: 58.33%;
+    top: 20.83%;
+    left: 30.98%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.animationClassBack-10189 {
+  animation: animationBack-10189 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-3541161 {
+  from {
+    width: 91.27%;
+    height: 32.31%;
+    top: 24.16%;
+    left: 6.55%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.animationClass-3541161 {
+  animation: animation-3541161 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-null3541161 {
+  from {
+    opacity: 0;
+    z-index: -10;
+  }
+  to {
+    width: 91.27%;
+    height: 32.31%;
+    top: 24.16%;
+    left: 6.55%;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+}
+.animationClassBack-null3541161 {
+  animation: animationBack-null3541161 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-455957 {
+  from {
+    width: 20.97%;
+    height: 39.45%;
+    top: 57.29%;
+    left: 77.38%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.animationClass-455957 {
+  animation: animation-455957 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-null455957 {
+  from {
+    opacity: 0;
+    z-index: -10;
+  }
+  to {
+    width: 20.97%;
+    height: 39.45%;
+    top: 57.29%;
+    left: 77.38%;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+  }
+}
+.animationClassBack-null455957 {
+  animation: animationBack-null455957 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-3541282 {
+  from {
+    width: 70.15%;
+    height: 39.16%;
+    top: 57.8%;
+    left: 6.55%;
+    opacity: 1;
+    z-index: 3;
+    transform: rotate(0deg);
+    border-radius: 16px 16px 16px 16px;
+    background: linear-gradient(135deg, #000000ff 18%, #00000000 100%);
+    backdrop-filter: blur(10.033543586730957px);
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.animationClass-3541282 {
+  animation: animation-3541282 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-null3541282 {
+  from {
+    opacity: 0;
+    z-index: -10;
+  }
+  to {
+    width: 70.15%;
+    height: 39.16%;
+    top: 57.8%;
+    left: 6.55%;
+    opacity: 1;
+    z-index: 3;
+    transform: rotate(0deg);
+    border-radius: 16px 16px 16px 16px;
+    background: linear-gradient(135deg, #000000ff 18%, #00000000 100%);
+    backdrop-filter: blur(10.033543586730957px);
+  }
+}
+.animationClassBack-null3541282 {
+  animation: animationBack-null3541282 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-455956 {
+  from {
+    width: 8.73%;
+    height: 2.85%;
+    top: 60.04%;
+    left: 80.29%;
+    opacity: 1;
+    z-index: 15;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.animationClass-455956 {
+  animation: animation-455956 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-null455956 {
+  from {
+    opacity: 0;
+    z-index: -10;
+  }
+  to {
+    width: 8.73%;
+    height: 2.85%;
+    top: 60.04%;
+    left: 80.29%;
+    opacity: 1;
+    z-index: 15;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+}
+.animationClassBack-null455956 {
+  animation: animationBack-null455956 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-4511164 {
+  from {
+    width: 12.93%;
+    height: 8.69%;
+    top: 70.88%;
+    left: 80.82%;
+    opacity: 1;
+    z-index: 13;
+    transform: rotate(-13.1deg);
+    overflow: hidden;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.animationClass-4511164 {
+  animation: animation-4511164 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-null4511164 {
+  from {
+    opacity: 0;
+    z-index: -10;
+  }
+  to {
+    width: 12.93%;
+    height: 8.69%;
+    top: 70.88%;
+    left: 80.82%;
+    opacity: 1;
+    z-index: 13;
+    transform: rotate(-13.1deg);
+    overflow: hidden;
+  }
+}
+.animationClassBack-null4511164 {
+  animation: animationBack-null4511164 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBgBack-4511164 {
+  from {
+    opacity: 1;
+  }
+  to {
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/figma-plugin-a7287.appspot.com/o/user-images%2F02-aug-2024%2Fashwin04751722576075741%2Fimage-451-1164.png?alt=media&token=0);
+  }
+}
+.bgClassBack-4511164 {
+  animation: animationBgBack-4511164 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-391953 {
+  from {
+    width: 13.03%;
+    height: 8.6%;
+    top: 70.98%;
+    left: 82.54%;
+    opacity: 1;
+    z-index: 12;
+    transform: rotate(14deg);
+    overflow: hidden;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.animationClass-391953 {
+  animation: animation-391953 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-null391953 {
+  from {
+    opacity: 0;
+    z-index: -10;
+  }
+  to {
+    width: 13.03%;
+    height: 8.6%;
+    top: 70.98%;
+    left: 82.54%;
+    opacity: 1;
+    z-index: 12;
+    transform: rotate(14deg);
+    overflow: hidden;
+  }
+}
+.animationClassBack-null391953 {
+  animation: animationBack-null391953 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBgBack-391953 {
+  from {
+    opacity: 1;
+  }
+  to {
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/figma-plugin-a7287.appspot.com/o/user-images%2F02-aug-2024%2Fashwin04751722576075741%2Fimage-391-953.png?alt=media&token=0);
+  }
+}
+.bgClassBack-391953 {
+  animation: animationBgBack-391953 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-454955 {
+  from {
+    width: 3.37%;
+    height: 3.67%;
+    top: 77.98%;
+    left: 86.57%;
+    opacity: 1;
+    z-index: 14;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.animationClass-454955 {
+  animation: animation-454955 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-null454955 {
+  from {
+    opacity: 0;
+    z-index: -10;
+  }
+  to {
+    width: 3.37%;
+    height: 3.67%;
+    top: 77.98%;
+    left: 86.57%;
+    opacity: 1;
+    z-index: 14;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+}
+.animationClassBack-null454955 {
+  animation: animationBack-null454955 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-397937 {
+  from {
+    width: 44.38%;
+    height: 65.95%;
+    top: 98.88%;
+    left: 6.88%;
+    opacity: 1;
+    z-index: 8;
+    transform: rotate(0deg);
+    border-radius: 16px 16px 16px 16px;
+    background: #000000b0;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.animationClass-397937 {
+  animation: animation-397937 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-null397937 {
+  from {
+    opacity: 0;
+    z-index: -10;
+  }
+  to {
+    width: 44.38%;
+    height: 65.95%;
+    top: 98.88%;
+    left: 6.88%;
+    opacity: 1;
+    z-index: 8;
+    transform: rotate(0deg);
+    border-radius: 16px 16px 16px 16px;
+    background: #000000b0;
+  }
+}
+.animationClassBack-null397937 {
+  animation: animationBack-null397937 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-397938 {
+  from {
+    width: 44.58%;
+    height: 65.95%;
+    top: 98.88%;
+    left: 53.11%;
+    opacity: 1;
+    z-index: 10;
+    transform: rotate(0deg);
+    border-radius: 16px 16px 16px 16px;
+    background: #000000b0;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.animationClass-397938 {
+  animation: animation-397938 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-null397938 {
+  from {
+    opacity: 0;
+    z-index: -10;
+  }
+  to {
+    width: 44.58%;
+    height: 65.95%;
+    top: 98.88%;
+    left: 53.11%;
+    opacity: 1;
+    z-index: 10;
+    transform: rotate(0deg);
+    border-radius: 16px 16px 16px 16px;
+    background: #000000b0;
+  }
+}
+.animationClassBack-null397938 {
+  animation: animationBack-null397938 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-399929 {
+  from {
+    width: 44.38%;
+    height: 65.95%;
+    top: 166.77%;
+    left: 6.88%;
+    opacity: 1;
+    z-index: 9;
+    transform: rotate(0deg);
+    border-radius: 16px 16px 16px 16px;
+    background: #000000b0;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.animationClass-399929 {
+  animation: animation-399929 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-null399929 {
+  from {
+    opacity: 0;
+    z-index: -10;
+  }
+  to {
+    width: 44.38%;
+    height: 65.95%;
+    top: 166.77%;
+    left: 6.88%;
+    opacity: 1;
+    z-index: 9;
+    transform: rotate(0deg);
+    border-radius: 16px 16px 16px 16px;
+    background: #000000b0;
+  }
+}
+.animationClassBack-null399929 {
+  animation: animationBack-null399929 0.4s ease-out 0s normal forwards;
+}
+@keyframes animation-399930 {
+  from {
+    width: 44.58%;
+    height: 65.95%;
+    top: 166.77%;
+    left: 53.11%;
+    opacity: 1;
+    z-index: 11;
+    transform: rotate(0deg);
+    border-radius: 16px 16px 16px 16px;
+    background: #000000b0;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.animationClass-399930 {
+  animation: animation-399930 0.4s ease-out 0s normal forwards;
+}
+@keyframes animationBack-null399930 {
+  from {
+    opacity: 0;
+    z-index: -10;
+  }
+  to {
+    width: 44.58%;
+    height: 65.95%;
+    top: 166.77%;
+    left: 53.11%;
+    opacity: 1;
+    z-index: 11;
+    transform: rotate(0deg);
+    border-radius: 16px 16px 16px 16px;
+    background: #000000b0;
+  }
+}
+.animationClassBack-null399930 {
+  animation: animationBack-null399930 0.4s ease-out 0s normal forwards;
+}

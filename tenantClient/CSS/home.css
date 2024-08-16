@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background: url(/Images/home-background.jpeg);
+    background-repeat: no-repeat;
+    background-size: 200vh 60vw;
+    flex-direction: column;
+}
+.container .header{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .header ul{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.container .header ul li{
+    height: 100%;
+    width: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.container .header ul li:hover{
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.4) 0%, rgba(115, 115, 115, 0.1) 100%);
+}
+.container .login{
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .login .box{
+    height: 70vh;
+    width: 30vw;
+    border-radius: 40px;
+    opacity: 0px;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.4) 0%, rgba(115, 115, 115, 0.1) 100%);
+    border: 1px solid silver;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.container .login .box .image{
+    height: 10vh;
+    width: 10vw;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
+.container .login .box .image img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width:100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px white;
+}
+.container .login .box .head{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .login .box .head span{
+    color: #000000;
+    font-size: 28px;
+}
+.container .login .box input{
+    height: 3vh;
+    width: 70%;
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid #000000;
+    padding: 10px;
+    padding-left: 20px;
+    background-color: rgba(217, 217, 217, 0.4);
+    cursor: pointer;
+}
+.container .login .box input::placeholder{
+    color: #000000;
+    font-size: 14px;
+}
+.container .login .box input:focus{
+    outline: none;
+}
+.container .login .box .forgot{
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.container .login .box .forgot span{
+    color:white;
+}
+.container .login .box button{
+    height: 5vh;
+    width: 40%;
+    background:#000000;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container .login .box .register{
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.container .login .box .register span{
+    color: white;
+}

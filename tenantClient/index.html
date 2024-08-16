@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title> Social Media Manager </title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container" id="content">
+    <div class="sidebar">
+      <header>
+        <div class="logo-details">
+          <img src="Images/logo 2.jpg" alt="logo">
+          <span class="logo_name">Tech Vaseegrah</span>
+        </div>
+      </header>
+      <ul class="nav-links">
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class='bx bx-grid-alt' style="padding-right: 20px;"></i>
+              <span class="link_name">Dashboard</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow'></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Dashboard</a></li>
+            <li onclick="loadContent('Pages/Whatsapp.html')"><a href="#">Whatsapp</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-printer'  style="padding-right: 20px;"></i>
+            <span class="link_name" onclick="loadContent('Pages/printing.html')">Printing</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-package' style="padding-right: 20px;"></i>
+            <span class="link_name" onclick="loadContent('Pages/packing.html')">Packing</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bxs-cart' style="padding-right: 20px;"></i>
+            <span class="link_name" onclick="loadContent('Pages/Orders.html')">Orders</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-pie-chart-alt-2' style="padding-right: 20px;"></i>
+            <span class="link_name">Analytics</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Analytics</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-cog'  style="padding-right: 20px;"></i>
+            <span class="link_name">Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="home.html">
+            <i class='bx bx-log-out' style="padding-right: 20px;"></i>
+            <span class="link_name">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="section2">
+        <div class="head">
+          <span>Welcome to Tech Vaseegrah!</span>
+          <!-- <button id="theme-toggle" class="theme-toggle">🌙 Dark Mode</button> -->
+        </div>
+        <div class="order-details">
+          <div class="total">
+            <div class="details">
+              <h3>Total Orders</h3>
+              <img src="Images/increase.png" alt="">
+            </div>
+            <h4 style="padding-top: 20px; font-size: 40px; color: black;">560</h4>
+          </div>
+          <div class="cancel">
+            <div class="details">
+              <h3>Orders Cancelled</h3>
+              <img src="Images/decrease.png" alt="">
+            </div>
+            <h4 style="padding-top: 20px; font-size: 40px; color: black;">6</h4>
+          </div>
+          <div class="complete">
+            <div class="details">
+            <h3>Completed</h3>
+            <img src="Images/checked.png" alt="">
+          </div>
+            <h4 style="padding-top: 20px; padding-left: 40px; font-size: 40px; color: black;">300</h4>
+          </div>
+          <button class="analytics" onclick="loadContent('Pages/analytics.html')"> View Analytics</button>
+        </div>
+        <div class="revenue">
+          <div class="profit">
+            <h3>Total Revenue (Example)</h3>
+          </div>
+          <div class="growth">
+            <h3>Social Media Growth</h3>
+            <div class="instagram" style="display: flex; gap: 5px; padding-right: 14px;">
+              <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+              <h4>Instagram : 20%</h4>
+              <a href="#"><i class='bx bxs-up-arrow-alt bx-fade-up bx-rotate-90' ></i></a>
+            </div>
+            <div class="Whatsapp" style="display: flex; gap: 5px; padding-right: 12px;">
+              <a href="#"><i class='bx bxl-whatsapp-square' ></i></a>
+              <h4>Whatsapp : 20%</h4>
+              <a href="#"><i class='bx bxs-up-arrow-alt bx-fade-up bx-rotate-90' ></i></a>
+            </div>
+            <div class="website" style="display: flex; gap: 5px; padding-right: 30px;">
+              <a href="#"><i class='bx bxl-youtube' ></i></a>
+              <h4>Youtube : 20%</h4>
+              <a href="#"><i class='bx bxs-up-arrow-alt bx-fade-up bx-rotate-90' ></i></a>
+            </div>
+            <div class="graph">
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+      <!-- Firebase App (the core Firebase SDK) -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+
+<!-- Firebase Authentication SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+  <script src="JS/script.js"></script>
+</body>
+</html>

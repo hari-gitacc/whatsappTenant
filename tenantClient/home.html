@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Vaseegrah - Login</title>
+    <link rel="stylesheet" href="CSS/home.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <ul>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="login">
+            <div class="box">
+                <div class="image">
+                    <img src="Images/logo 2.jpg" alt="image">
+                </div>
+                <div class="head">
+                    <span>Login</span>
+                </div>
+                <input type="text" placeholder="Username" id="username2">
+                <input type="password" placeholder="Password" id="password2">
+                <div class="forgot">
+                    <span>Forgot Password?</span>
+                </div>
+                <button type="submit" id="login-form">Login</button>
+                <div class="register" id="register">
+                    <span>Don't have an account? Register</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+        apiKey: "AIzaSyBFjh1tv9Ix5HfpQ3TJRSnO-LhAgeBrL44",
+        authDomain: "whatsapp-tenant.firebaseapp.com",
+        projectId: "whatsapp-tenant",
+        storageBucket: "whatsapp-tenant.appspot.com",
+        messagingSenderId: "3734258642",
+        appId: "1:3734258642:web:8d20aefd23e8914f7c7e0b",
+        measurementId: "G-0MLGP2D7N0",
+      };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        document.getElementById("login-form").addEventListener("click", function (event) {
+            event.preventDefault();
+            const email = document.getElementById("username2").value;
+            const password = document.getElementById("password2").value;
+
+            // Log in the user using Firebase Authentication
+            firebase.auth().signInWithEmailAndPassword(email, password)
+                .then((userCredential) => {
+                    // Successfully logged in
+                    const user = userCredential.user;
+                    
+                    // Send the user's email to your backend
+                    fetch('https://your-server-endpoint.com/login', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            email: user.email
+                        })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log('Success:', data);
+                        
+                        // Store the returned data in local storage
+                        localStorage.setItem('userData', JSON.stringify(data));
+                        
+                        alert("Login successful!");
+                        // Redirect to another page or perform another action after login
+                        window.location.href = "home.html";
+                    })
+                    .catch((error) => {
+                        console.error('Error:', error);
+                        alert("Login successful, but failed to send data to server.");
+                    });
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    alert("Failed to log in: " + errorMessage);
+                });
+        });
+    </script>
+</body>
+</html>

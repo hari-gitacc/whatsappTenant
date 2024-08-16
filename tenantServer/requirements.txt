@@ -1,0 +1,9 @@
+Flask
+flask_pymongo
+openai
+requests
+gTTS
+python-dotenv
+scikit-learn
+langid
+

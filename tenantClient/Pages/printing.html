@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Vaseegrah - Printing</title>
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet"/>
+    <link href="CSS/printing.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <div class="input">
+          <input type="text" class="field" placeholder="Search..." style="color: rgb(18, 18, 18)"/>
+          <div class="search-icon">
+            <i class="bx bx-search-alt"></i>
+          </div>
+        </div>
+        <div class="overlay" onclick="redirectToMainPage()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="submain">
+        <div class="submain1">
+          <div class="twobt">
+            <button class="button2">
+              <h3>All orders</h3>
+            </button>
+            <button class="button2">
+              <h3>Cancelled</h3>
+            </button>
+          </div>
+          <div class="print">
+            <button class="button3">
+              <h3>Print All</h3>
+            </button>
+          </div>
+          <div class="onebt">
+            <button class="button1">
+              <h2>Download As CSV</h2>
+            </button>
+          </div>
+        </div>
+        <div class="submain2">
+          <!-- <div class="checking"> -->
+            <!-- <div class="select"></div>
+            <div class="ALLorders"></div>
+            <div class="Date"></div>
+            <div class="Customer"></div>
+            <div class="Payment"></div>
+            <div class="Price"></div> -->
+            <div class="main-list">
+              <ul class="head">
+                <li class="select">
+                  <input type="checkbox" class="checkbox">
+                </li>
+                <li class="AllOrders" style="font-size: 22px;">All Orders</li>
+                <li class="Date" style="font-size: 22px;">Date</li>
+                <li class="Customer" style="font-size: 22px;">Customer</li>
+                <li class="Payment" style="font-size: 22px;">Payment</li>
+                <li class="Price" style="font-size: 22px;">Price</li>
+              </ul>
+              <ul class="head">
+                <li class="select">
+                  <input type="checkbox" class="checkbox">
+                </li>
+                <li class="AllOrders">Coconut Oil</li>
+                <li class="Date">Jun 20, 2024</li>
+                <li class="Customer">Sachin</li>
+                <li class="Payment">Paid</li>
+                <li class="Price">$250.97</li>
+              </ul>
+              <ul class="head">
+                <li class="select">
+                  <input type="checkbox" class="checkbox">
+                </li>
+                <li class="AllOrders">Neem Oil</li>
+                <li class="Date">Jul 8, 2024</li>
+                <li class="Customer">Vadivelu</li>
+                <li class="Payment">Paid</li>
+                <li class="Price">$110.23</li>
+              </ul>
+              <ul class="head">
+                <li class="select">
+                  <input type="checkbox" class="checkbox">
+                </li>
+                <li class="AllOrders">Coconut Oil</li>
+                <li class="Date">Jun 20, 2024</li>
+                <li class="Customer">Sachin</li>
+                <li class="Payment">Paid</li>
+                <li class="Price">$250.97</li>
+              </ul>
+              <ul class="head">
+                <li class="select">
+                  <input type="checkbox" class="checkbox">
+                </li>
+                <li class="AllOrders">Neem Oil</li>
+                <li class="Date">Jul 8, 2024</li>
+                <li class="Customer">Vadivelu</li>
+                <li class="Payment">Paid</li>
+                <li class="Price">$110.23</li>
+              </ul>
+              <ul class="head">
+                <li class="select">
+                  <input type="checkbox" class="checkbox">
+                </li>
+                <li class="AllOrders">Coconut Oil</li>
+                <li class="Date">Jun 20, 2024</li>
+                <li class="Customer">Sachin</li>
+                <li class="Payment">Paid</li>
+                <li class="Price">$250.97</li>
+              </ul>
+              <ul class="head">
+                <li class="select">
+                  <input type="checkbox" class="checkbox">
+                </li>
+                <li class="AllOrders">Neem Oil</li>
+                <li class="Date">Jul 8, 2024</li>
+                <li class="Customer">Vadivelu</li>
+                <li class="Payment">Paid</li>
+                <li class="Price">$110.23</li>
+              </ul>
+              <ul class="head">
+                <li class="select">
+                  <input type="checkbox" class="checkbox">
+                </li>
+                <li class="AllOrders">Coconut Oil</li>
+                <li class="Date">Jun 20, 2024</li>
+                <li class="Customer">Sachin</li>
+                <li class="Payment">Paid</li>
+                <li class="Price">$250.97</li>
+              </ul>
+              <ul class="head">
+                <li class="select">
+                  <input type="checkbox" class="checkbox">
+                </li>
+                <li class="AllOrders">Neem Oil</li>
+                <li class="Date">Jul 8, 2024</li>
+                <li class="Customer">Vadivelu</li>
+                <li class="Payment">Paid</li>
+                <li class="Price">$110.23</li>
+              </ul>
+              <ul class="head">
+                <li class="select">
+                  <input type="checkbox" class="checkbox">
+                </li>
+                <li class="AllOrders">Coconut Oil</li>
+                <li class="Date">Jun 20, 2024</li>
+                <li class="Customer">Sachin</li>
+                <li class="Payment">Paid</li>
+                <li class="Price">$250.97</li>
+              </ul>
+            </div>
+            <div class="Last">
+              <span>Choose orders to take PRINT</span>
+              <button class="button4">
+                <h3>Print</h3>
+              </button>
+            </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="JS/printing.js"></script>
+  </body>
+</html>

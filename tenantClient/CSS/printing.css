@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .main {
+    height: 100vh;
+    width: 100vw;
+    background-color: gray;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background-color: #333;
+    justify-content: center;
+    text-align: center;
+  }
+  .input {
+    position: relative;
+  }
+  .field {
+    height: 5vh;
+    width: 50vw;
+    background-color: #d6dcdc;
+    border-radius: 20px;
+    color: black;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    outline: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .field::placeholder {
+    color: black;
+    padding: 10px;
+  }
+  .search-icon {
+    position: absolute;
+    top: 55%;
+    right: 2%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #131212;
+  }
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 25px;
+    height: 100%;
+    right: 20px; 
+    gap: 4px;
+    cursor: pointer;
+  }
+  .line {
+    background-color: white;
+    height: 3px;
+    width: 80%;
+  }
+  .submain {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 90vh;
+    width: 100vw;
+    background-color:gray;
+    padding-top: 20px;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+  }
+  .submain1 {
+    height: 17vh;
+    border-radius: 10px;
+    width: 100%;
+    background-color:#333;  
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .onebt {
+    border-radius: 10px;
+    height: 9vh;
+    width: 20%;
+    border-radius: 40px;
+    background-color: #d6dcdc;
+    justify-content: center;
+    padding: 8px;
+  }
+  .button1 {
+    height: 7vh;
+    width: 90%;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  .button1:hover {
+    background-color: #e0e0e0; 
+  }
+  
+  .button1:active {
+    background: linear-gradient(145deg,#dcdcdc,#b0b0b0);
+    transform: scale(0.98); 
+  }
+  .button2 {
+    height: 7vh;
+    width: 90%;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  .button2:hover {
+    background-color: #e0e0e0; 
+  }
+  
+  .button2:active {
+    background: linear-gradient(145deg,#dcdcdc,#b0b0b0); 
+    transform: scale(0.98); 
+  }
+  .twobt {
+    height: 9vh;
+    width: 20%;
+    border-radius: 40px;
+    background-color: #d6dcdc;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .print {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+  }
+  .button3 {
+    border-radius: 40px;
+    width: 40%;
+    height: 7vh;
+    /* background: linear-gradient(#001c63, #0039c9); */
+    background: linear-gradient(rgb(205, 5, 5),rgb(239, 159, 9));
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    border: none;
+  }
+  .button3:hover {
+    background-color: #e0e0e0; 
+  }
+  .button3:active {
+    /* background: linear-gradient(145deg,#215aec,#082160); */
+    background: linear-gradient(rgb(239, 159, 9),rgb(205, 5, 5));
+    transform: scale(0.98); 
+  }
+  .submain2 {
+    height: 73vh;
+    background-color: #333;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  .submain2 .main-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    width: 90%;
+  }
+  .submain2 .main-list .head{
+    display: flex;
+    height: 8vh;
+    width: 100%;
+    list-style: none;
+    border-bottom: 1px solid gainsboro;
+  }
+  .submain2 .main-list .head .select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 5%;
+  }
+  .submain2 .main-list .head .select .checkbox{
+    height:50%;
+    width: 50%;
+    border-radius: 50px;
+  }
+  .submain2 .main-list .head .AllOrders{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 20%;
+    color: white;
+  }
+  .submain2 .main-list .head .Date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 20%;
+    color: white;
+  }
+  .submain2 .main-list .head .Customer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 20%;
+    color: white;
+  }
+  .submain2 .main-list .head .Payment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 20%;
+    color: white;
+  }
+  .submain2 .main-list .head .Price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 15%;
+    color: white;
+  }
+  .submain2 .Last {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 10%;
+    gap: 20px;
+    background-color: black;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top:50px;
+    margin-left: 20px;
+  }
+  .submain2 .Last span{
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .button4 {
+    border-radius: 40px;
+    width: 100%;
+    height: 7vh;
+    background: linear-gradient(rgb(205, 5, 5),rgb(239, 159, 9));
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    border: none;
+  }
+  .button4:hover {
+    background-color: #e0e0e0;
+  }
+  .button4:active {
+    background: linear-gradient(rgb(239, 159, 9),rgb(205, 5, 5));
+    transform: scale(0.98); 
+  }
+  

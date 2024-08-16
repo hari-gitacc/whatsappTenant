@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orders</title>
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <!-- <link rel="stylesheet" href="/SMM-UI-UX/CSS/Whatsapp.css"> -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.section {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+  }
+  .section2{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 25vw;
+    background-color:white;
+    border-right: 1px solid gray;
+  }
+  .section2 .search{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 50px;
+    padding: 5px;
+    gap: 5px;
+    border-bottom: 2px solid gainsboro;
+  }
+  .section2 .search i{
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: rgb(62, 59, 59);
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .section2 .search input{
+    width: 60%;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  .section2 .head{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(192, 235, 193);
+    border-bottom: 1px solid gray;
+    gap: 30px;
+  }
+  .section2 .head button{
+    height: 35px;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .section2 .chatarea{
+    overflow-y: auto;
+    flex-grow: 1;
+  }
+  .section2 .chatarea .ul{
+    list-style: none;
+    padding: 0;  
+  }
+  .section2 .chatarea .ul li{
+    height: 70px;
+    border-bottom: 2px solid gainsboro;
+    padding: 10px;
+    cursor: pointer;
+    color: #000;
+  }
+  .section2 .chatarea .ul li:hover{
+    background-color: rgb(192, 235, 193);
+    border-radius: 20px;
+  }
+#default-message {
+  position: absolute;
+  height: 100vh;
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+#default-message a{
+  height: 60px;
+    text-align: center;
+    line-height: 50px;
+    color: gray;
+    font-size: 50px;
+    cursor: pointer;
+}
+#default-message h3{
+  color: gray;
+}
+#contact-response {
+  display: none;
+}
+#contact-response.show-contact-response {
+  height: 100vh;
+  width: 75vh;
+  display: flex;
+}
+  .contact-response .section3{
+    position: absolute;
+    height: 100vh;
+    width: 75vw;
+    display: flex;
+    border-right: 1px solid gray;
+  }
+  .contact-response .section3 .section3part1{
+    height: 100vh;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid gray;
+  }
+.section3 .msghead{
+    display: flex;
+    height: 8%;
+    background-color: rgb(192, 235, 193);
+    padding: 10px;
+    gap: 10px;
+    border-bottom: 1px solid gray;
+}
+.section3 .msghead img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.section3 .msghead .name{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section3 .section3part1 .conversation{
+    display: flex;
+    flex-direction: column;
+    height: 84%;
+    width: 100%;
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white;
+    overflow-y: auto;
+}
+.section3 .section3part1 .conversation .cart{
+    display:flex;
+    flex-direction: column;
+    height: 30%;
+    width: 80%;
+    background-color: wheat;
+}
+/* .message {
+  margin-bottom: 15px;
+}
+
+.message.sent {
+  text-align: right;
+}
+
+.message.received {
+  text-align: left;
+}
+
+.message .content {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 10px;
+  max-width: 60%;
+}
+
+.message.sent .content {
+  background-color: rgb(192, 235, 193);
+  border: 1px solid gray;
+  border-radius: 10px 0px 10px 10px;
+}
+
+.message.received .content {
+  background-color: rgb(192, 235, 193);
+  border: 1px solid gray;
+  border-radius: 0px 10px 10px 10px;
+} */
+.contact-response .section3 .section3part2{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 30vw;
+}
+.contact-response .section4{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 30vw;
+}
+.section4 .section4-h{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  background-color: rgb(192, 235, 193); 
+  border-bottom: 1px solid gray;
+}
+.section4 .section4-h h3{
+  display: flex;
+  height: 5vh;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: gainsboro;
+  border: 1px solid gray;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.section4 .cus-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 100%;
+    gap: 20px;
+    background-color: white;
+}
+.section4 .cus-profile img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.section4 .cus-profile .cus-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section4 .orders{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+  background-color: white;
+  gap: 10px;
+}
+.section4 .orders > div{
+  height: 50px;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.section4 .current-status{
+  height: 64vh;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-bottom: 1px solid gray;
+}
+.section4 .current-status .address{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(192, 235, 193);
+    border-radius: 10px;
+    gap: 10px;
+}
+
+@media screen and (max-width: 630px) {
+  .section {
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+  }
+
+  .section1 {
+    width: 100vw;
+    height: 100vh;
+    border-right: none;
+    border-bottom: 1px solid gray;
+  }
+
+  .section1:hover {
+    width: 100vw;
+  }
+
+  .section2 {
+    width: 100vw;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid gray;
+  }
+
+  .section2 .search {
+    justify-content: flex-start;
+  }
+
+  .section2 .search input {
+    width: calc(100% - 50px);
+  }
+
+  .section2 .head {
+    justify-content: space-around;
+  }
+
+  .section3 {
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+  }
+
+  .section3 .section3part1 {
+    width: 100vw;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid gray;
+  }
+
+  .section3 .section3part2 {
+    width: 100vw;
+    height: auto;
+  }
+
+  .contact-response .section3 {
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+  }
+
+  .contact-response .section3 .section3part1 {
+    width: 100vw;
+    height: 100vh;
+    border-right: none;
+    border-bottom: 1px solid gray;
+  }
+
+  .contact-response .section3 .section3part2 {
+    width: 100vw;
+    height: auto;
+  }
+
+  .section4 {
+    width: 100vw;
+    height: auto;
+  }
+
+  .section4 .current-status .h {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .section4 .current-status .status-msg {
+    width: calc(100% - 40px);
+  }
+
+  .section4 .address-input {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .section4 .address-input .ai {
+    justify-content: flex-start;
+  }
+
+}
+</style>
+</head>
+<body>
+  <div class="section">
+    <!-- <div class="section1" id="section-1">
+      <div class="header1">
+        <img src="/SMM-UI-UX/Images/whatsapp.png" alt="logo">
+        <h2>Whatsapp</h2>
+      </div>
+      <div class="whatsappsidebar">
+        <ul>
+          <li>
+            <a href="#"  id="messages-button">
+              <i class='bx bx-chat'></i>
+              <span class="items">Messages</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-cog'></i>
+              <span class="items">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="redirectToMainPage()">
+              <i class='bx bx-arrow-back'></i>
+              <span class="items">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div> -->
+    <div class="section2" id="section-2">
+      <form action="">
+        <div class="head">
+            <button>Whatsapp</button>
+            <button>Instagram</button>
+        </div>
+        <div class="search">
+          <a href="#"><i class='bx bx-search-alt-2'></i></a>
+          <input type="text" id="search-bar" placeholder="Search">
+        </div>
+      </form>
+      <div class="chatarea" id="chat-area">
+        <ul class="ul" id="contact-list">
+          
+          <!-- dynamically contacts will display here -->
+        </ul>
+      </div>
+    </div>
+
+    <div id="main-content">
+
+        <div class="default-message" id="default-message">
+          <a href="#"><i class='bx bxs-chat'></i></a>
+          <h3>Select a person id to see the order details</h3>
+        </div> 
+
+        <div class="contact-response" id="contact-response">
+
+          <div class="section3">
+            <div class="section3part1">
+              <div class="msghead">
+                <img src="Images/defaultprofile.png" alt="">
+                <div class="name">
+                  <h3 id="profile-name">Profile name</h3>
+                  <!-- <h5>Online</h5> -->
+                </div>
+              </div>
+              <div class="conversation" id="conversation">
+                <div class="cart" id="cart">
+                    <div class="h1">
+                        <div class="image">
+                            <img src="Images/defaultprofile.png" alt="">
+                        </div>
+                        <div class="description">
+                            <div class="content"><h3>This is a good product</h3></div>
+                            <div class="price"><h5>Oty-1 $130</h5></div>
+                        </div>
+                    </div>
+                    <div class="h2">
+                        <div class="date">Date: 07/07/2024</div>
+                        <div class="order-id">29304u29048e012841</div>
+                    </div>
+                </div>
+              </div>
+              <!-- <div class="chat-input">
+                <input type="text" id="chat-input" placeholder="Message">
+                <a href="#" onclick="sendMessage()"><i class='bx bx-send'></i></a>
+                
+              </div> -->
+            </div>
+            <div class="section3part2">
+              <div class="section4" >
+                <div class="section4-h">
+                  <h3>Profile</h3>
+                </div>
+                <div class="cus-profile">
+                  <img src="Images/defaultprofile.png" alt="">
+                  <div class="cus-details">
+                    <h4 id="profile-name2">Name</h4>
+                    <h6>Mobile No</h6>
+                  </div>
+                </div>
+                <div class="orders">
+                  <div class="o1">
+                    <h5>Orders Count</h5>
+                    <h5>Value</h5>
+                  </div>
+                  <div class="o2">
+                    <h5>Total order value</h5>
+                    <h5>Value</h5>
+                  </div>
+                  <div class="o3">
+                    <h5>Wallet</h5>
+                    <h5>Value</h5>
+                  </div>
+                </div>
+                <div class="current-status">
+                  <!-- <div class="h">
+                    <h4>Last Order</h4>
+                    <a href="#"><i class='bx bx-search-alt-2'></i></a>
+                  </div>
+                  <div class="status-msg">
+                    <h5>No Recent order associated with current user found. Please use Assisted sales to create one</h5>
+                  </div> -->
+                  <div class="address">
+                    <h5>Username         - abc</h5>
+                    <h5>Email            - abc@gmail.com</h5>
+                    <h5>Ph number        - 9304902483</h5>
+                    <h5>Delivery Address - 11/40 east street</h5>
+                    <h5>City/Town        - kumbakonam</h5>
+                    <h5>Postal/Zip code  - 983243</h5>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+            
+          </div>
+
+          
+        </div>
+
+    </div>
+
+  </div>
+  <!-- <script src="/SMM-UI-UXJS/Whatsapp.js"></script> -->
+   <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const contacts = [
+    { name: 'John Doe' },
+    { name: 'Jane Smith' },
+    { name: 'Alice Johnson' },
+    { name: 'Bob Brown' },
+    { name: 'Charlie Davis' },
+    { name: 'John Doe' },
+    { name: 'Jane Smith' },
+    { name: 'Alice Johnson' },
+    { name: 'Bob Brown' },
+    { name: 'Charlie Davis' },
+    { name: 'John Doe' },
+    { name: 'Jane Smith' },
+    { name: 'Alice Johnson' },
+    { name: 'Bob Brown' },
+    { name: 'Charlie Davis' },
+  ];
+
+const contactList = document.getElementById('contact-list');
+  const searchBar = document.getElementById('search-bar');
+
+  function renderContacts(filteredContacts) {
+    contactList.innerHTML = '';
+    filteredContacts.forEach(contact => {
+      const li = document.createElement('li');
+      li.textContent = contact.name;
+      li.addEventListener('click', () => openChat(contact.name));
+      contactList.appendChild(li);
+    });
+  }
+
+  const chatInput = document.getElementById('chat-input');
+  if (chatInput) {
+    chatInput.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        sendMessage();
+        event.preventDefault(); // Prevent the default behavior of form submission on Enter key press
+      }
+    });
+  }
+
+  renderContacts(contacts);
+
+  searchBar.addEventListener('input', (event) => {
+    const searchText = event.target.value.toLowerCase();
+    const filteredContacts = contacts.filter(contact => 
+      contact.name.toLowerCase().includes(searchText)
+    );
+    renderContacts(filteredContacts);
+  });
+});
+
+function redirectToMainPage() {
+  window.location.replace("login.html");
+}
+
+
+
+
+
+
+function openChat(contactName) {
+  const defaultMessage = document.getElementById('default-message');
+  const contactResponse = document.getElementById('contact-response');
+  const profileName = document.getElementById('profile-name');
+  const profileName2 = document.getElementById('profile-name2');
+
+  if (defaultMessage) {
+    defaultMessage.style.display = 'none';
+  }
+  if (contactResponse) {
+    setTimeout(() => {
+      contactResponse.style.display = 'flex';
+      if (profileName) {
+        profileName.textContent = contactName;
+      }
+      if (profileName2) {
+        profileName2.textContent = contactName;
+      }
+    }, 500);
+  }
+
+  const conversation = document.getElementById('conversation');
+  if (conversation) {
+    conversation.innerHTML = '';
+  }
+  
+  // Optionally, load previous messages for the contact here
+}
+
+function sendMessage() {
+  const inputElement = document.getElementById('chat-input');
+  const messageText = inputElement.value;
+  if (messageText.trim() === '') return;
+
+  const messageElement = document.createElement('div');
+  messageElement.classList.add('message', 'sent');
+  messageElement.innerHTML = `<div class="content">${messageText}</div>`;
+
+  document.getElementById('conversation').appendChild(messageElement);
+  inputElement.value = '';
+
+  setTimeout(() => {
+      receiveMessage('This is a reply message');
+  }, 1000);
+}
+
+function receiveMessage(messageText) {
+  const messageElement = document.createElement('div');
+  messageElement.classList.add('message', 'received');
+  messageElement.innerHTML = `<div class="content">${messageText}</div>`;
+
+  document.getElementById('conversation').appendChild(messageElement);
+}
+
+   </script>
+</body>
+</html>

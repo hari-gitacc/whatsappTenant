@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whatsapp</title>
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.section {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+}
+.section1{
+  height: 100vh;
+  width: 5vw;
+  border-right: 1px solid gray;
+  background-color: #347758;
+  position:relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: width 0.4s ease 0.3s;
+  z-index: 100;
+}
+body.dark-mode .section1{
+  background-color: #333;
+  color:white;
+}
+.section1:hover{
+  width: 14%;
+  text-overflow: clip;
+}
+.header1{
+  display: flex;
+  padding: 20px;
+  padding-left: 25px;
+  gap: 20px;
+}
+.section1 img{
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+}
+  .section1 h2 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  .whatsappsidebar{
+    height: 90%;
+  }
+  .whatsappsidebar li{
+    display: flex;
+    height:40px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    list-style: none;
+    transition: all 0.4s ease;
+  }
+  .section1 .whatsappsidebar::-webkit-scrollbar{
+    display: none;
+  }
+  .whatsappsidebar li:hover{
+    background-color: rgb(66, 72, 63);
+    border-radius: 10px;
+  }
+  body.dark-mode .section1 .whatsappsidebar li:hover{
+  background-color: rgb(102, 101, 101);
+}
+  .whatsappsidebar li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  .whatsappsidebar li a i{
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .whatsappsidebar li a .items{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    transition: all 0.4s ease;
+  }
+/* #theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0px;
+  color: inherit;
+}
+#theme-toggle:focus {
+  outline: none;
+} */
+  .section2{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 24vw;
+    background: #FFFFFF;
+    border-right: 2px solid gray;
+  }
+  body.dark-mode .section2{
+  background-color: #333;
+  color:white;
+}
+  .section2:dark-mode{
+    background-color: #333;
+  color:white;
+  }
+  .section2 .search{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 70px;
+    padding: 15px;
+    background: #FFFFFF;
+  }
+  body.dark-mode .section2 .search{
+  background-color: #333;
+  color:white;
+}
+  .section2 .search i{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 40px;
+    color: rgb(62, 59, 59);
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+  }
+  .section2 .search input{
+    width: 80%;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding-left: 40px;
+  }
+  .section2 .search input:focus{
+    outline: none;
+  }
+  .section2 .head{
+    display: flex;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    position: relative;
+  }
+  body.dark-mode .section2 .head{
+  background-color: #333;
+  color:white;
+}
+  .section2 .head a i{
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  body.dark-mode .section2 .head a i{
+  /* background-color: #333; */
+  color:white;
+}
+body.dark-mode .section2 .head a i:hover{
+  background-color: rgb(102, 101, 101);
+}
+  .section2 .head a i:hover{
+    background-color: rgb(219, 236, 226);
+  }
+.section2 .head a .tool-tip {
+  visibility: hidden;
+  width: 120px;
+  background: #1FAF38;
+  color: #fff;
+  text-align: center;
+  font-size:15px;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  bottom: 125%; 
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.section2 .head a .tool-tip::after {
+  content: "";
+  position: absolute;
+  top: 100%; 
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1FAF38 transparent transparent transparent;
+}
+
+.section2 .head a:hover .tool-tip {
+  visibility: visible;
+  opacity: 1;
+}
+  .section2 .chatarea{
+    overflow-y: auto;
+    flex-grow: 1;
+  }
+  .section2 .chatarea .ul{
+    list-style: none;
+    padding: 0;  
+    display: flex;
+    flex-direction: column;
+  }
+  /* Style the scrollbar container */
+.section2 .chatarea::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+    height: 12px; /* Height of the horizontal scrollbar */
+}
+
+/* Style the scrollbar track (the part the thumb slides within) */
+.section2 .chatarea::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background color of the track */
+    border-radius: 10px; /* Rounded corners of the track */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+.section2 .chatarea::-webkit-scrollbar-thumb {
+    background: #6f7c76; /* Color of the thumb */
+    border-radius: 10px; /* Rounded corners of the thumb */
+}
+
+/* Style the scrollbar thumb on hover */
+.section2 .chatarea::-webkit-scrollbar-thumb:hover {
+    background: #347758; /* Color of the thumb when hovered */
+}
+  .section2 .chatarea .ul li{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    border-top: 1px solid #000000;
+    padding: 10px;
+    cursor: pointer;
+    color: #000;
+  }
+  body.dark-mode .section2 .chatarea .ul li{
+    border-top: 1px solid white;
+  background-color: #333;
+  color:white;
+}
+body.dark-mode .section2 .chatarea .ul li:hover{
+  background-color: rgb(102, 101, 101);
+}
+  .section2 .chatarea .ul li:hover{
+    background-color: rgb(192, 235, 193);
+  }
+.profile-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgb(115, 179, 115);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.profile-Content{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 60%;
+}
+.recent-Message{
+  height: 20px;
+  width: 150px;
+}
+
+#default-message {
+  position: absolute;
+  height: 100vh;
+  width: 71vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+body.dark-mode .default-message{
+  background-color: #333;
+  color:white;
+}
+#default-message a{
+  height: 60px;
+    text-align: center;
+    line-height: 50px;
+    color: gray;
+    font-size: 50px;
+    cursor: pointer;
+}
+#default-message h3{
+  color: gray;
+}
+#contact-response {
+  display: none;
+}
+#contact-response.show-contact-response {
+  height: 100vh;
+  width: 71vw;
+  display: flex;
+}
+  .contact-response .section3{
+    position: absolute;
+    height: 100vh;
+    width: 71vw;
+    display: flex;
+    border-right: 1px solid gray;
+  }
+  .contact-response .section3 .section3part1{
+    height: 100vh;
+    width: 71vw;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid gray;
+  }
+.section3 .msghead{
+    display: flex;
+    height: 8%;
+    background-color: #347758;
+    padding: 10px;
+    gap: 10px;
+    border: 1px solid #000000
+}
+body.dark-mode .section3 .msghead{
+  background-color: #333;
+  color:white;
+}
+.section3 .msghead img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.section3 .msghead .name{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+.section3 .msghead a{
+  display: flex;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  align-self: flex-end;
+  justify-content: flex-end;
+}
+.section3 .conversation{
+  display: flex;
+  flex-direction: column;
+    height: 84%;
+    flex-grow: 1;
+    padding: 20px;
+    background-image: url(/Images/background\ 2.png);
+    overflow-y: auto;
+    align-items: flex-start;
+    gap: 10px;
+}
+body.dark-mode .section3 .conversation{
+  display: flex;
+  flex-direction: column;
+    height: 84%;
+    flex-grow: 1;
+    padding: 20px;
+  background-image: url(/Images/whatsapp\ back\ 2.jpg);
+  background-size: 100% 100%;
+  overflow-y: auto;
+    align-items: flex-start;
+    gap: 10px;
+}
+/* Style the scrollbar container */
+.section3 .conversation::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+    height: 12px; /* Height of the horizontal scrollbar */
+}
+
+/* Style the scrollbar track (the part the thumb slides within) */
+.section3 .conversation::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background color of the track */
+    border-radius: 10px; /* Rounded corners of the track */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+.section3 .conversation::-webkit-scrollbar-thumb {
+    background: #6f7c76; /* Color of the thumb */
+    border-radius: 10px; /* Rounded corners of the thumb */
+}
+
+/* Style the scrollbar thumb on hover */
+.section3 .conversation::-webkit-scrollbar-thumb:hover {
+    background: #347758; /* Color of the thumb when hovered */
+}
+
+.section3 .conversation .sent{
+  align-self: flex-end;
+}
+
+.section3 .chat-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8%;
+    width: 100%;
+    padding-top: 10px;
+    gap: 10px;
+    padding: 10px;
+}
+body.dark-mode .section3 .chat-input{
+  background-color: #333;
+  color:white;
+}
+.section3 .chat-input input{
+  flex-grow: 1;
+    height: 50px;
+    width: 90%;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    padding: 20px;
+    background: #2C2C2C;
+    border-radius: 40px;
+    color: #FFFFFF;
+    padding-left: 30px;
+}
+.section3 .chat-input input:focus{
+  outline: none;
+}
+body.dark-mode .section3 .chat-input input{
+  background-color: white;
+  color:#000000;
+}
+.section3 .chat-input input::placeholder{
+  color: #FFFFFF;
+  font-size: 14px;
+}
+body.dark-mode .section3 .chat-input input::placeholder{
+  background-color: white;
+  color:#000000;
+}
+.section3 .chat-input .icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 10%;
+  gap: 10px;
+}
+.section3 .chat-input .icons a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    color: white;
+    height: 90%;
+    font-size: 30px;
+    width: 50%;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+    background-color: #347758;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.section3 .chat-input .icons a i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 25px;
+  list-style: none;
+  text-decoration: none;
+}
+.section3 .chat-input .icons-1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 5%;
+  gap: 10px;
+}
+.section3 .chat-input .icons-1 a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    color: white;
+    height: 90%;
+    font-size: 30px;
+    width: 100%;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+    background-color: #347758;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.section3 .chat-input .icons-1 a i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 25px;
+  list-style: none;
+  text-decoration: none;
+}
+#camera-icon:hover {
+  transform: scale(1.1);
+}
+
+#camera-icon:active i {
+  animation: jump 1.2s;
+}
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+#record-btn:hover {
+  transform: scale(1.1);
+}
+
+#record-btn:active i {
+  animation: jump 1.2s;
+}
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+#stop-btn:hover {
+  transform: scale(1.1);
+}
+#stop-btn:active i {
+  animation: jump 1.2s;
+}
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+#send-btn:hover {
+  transform: scale(1.1);
+}
+#send-btn:active i {
+  animation: jump 1.2s;
+}
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.voice-message {
+  margin-bottom: 10px;
+}
+.voice-message {
+  width: 50%;
+  background: #58B468; 
+  border-radius: 15px;
+  padding: 10px;
+  margin: 5px 0;
+  align-self: flex-end;
+      text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px 20px 0px 20px;
+  gap: 5px;
+}
+
+.voice-message audio {
+  width: 100%;
+}
+.message {
+      max-width: 60%;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 15px;
+      position: relative;
+    }
+
+    .message.sent {
+      background: #58B468;
+      color: #FFFFFF;
+      align-self: flex-end;
+      text-align: right;
+      border-radius: 20px 20px 0px 20px;
+    }
+
+    .message.received {
+      background: #DCE6FF;
+      align-self: flex-start;
+      border-radius: 20px 20px 20px 0px;
+    }
+
+    .message .content {
+      font-size: 14px;
+    }
+
+    .message .tick-icon {
+  position: absolute;
+  bottom: 2px;
+  right: 5px;
+  font-size: 14px;
+  color: #34B7F1;
+}
+    .timestamp {
+      display: block;
+      font-size: 10px;
+      color: #4a4a4a;
+      margin-top: 5px;
+    }
+    .uploaded-image,
+.uploaded-video {
+  max-width: 100%;
+  max-height: 150px;
+  margin-top: 10px;
+}
+
+.document-message {
+  display: flex;
+  align-self: flex-end;
+  justify-content: flex-end;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  max-width: 100%;
+  margin: 10px 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.document-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #d9534f;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.document-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.document-filename {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  word-break: break-word;
+}
+
+.document-filesize {
+  font-size: 14px;
+  color: #666;
+}
+
+.document-download {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.document-download:hover {
+  text-decoration: underline;
+}
+.message.selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.contact-response .section3 .section3part2{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 0vw;
+    position: relative;
+    transition: width 0.4s ease 0.3s;
+    overflow: hidden;
+}
+.contact-response .section3 .section3part2 .expanded{
+  width: 46.5vw;
+}
+.contact-response .section4{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 30vw;
+    background: #FFFFFF;
+}
+body.dark-mode .section4{
+  background-color: #333;
+  color:white;
+}
+.section4 .section4-h{
+  display: flex;
+  height: 8.3vh;
+  border: 1px solid gray;
+}
+.section3part2 .section4-h .p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 90%;
+}
+.section4 .section4-h h3{
+  display: flex;
+  height: 5vh;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0px 10px 8px 0px #0000001A;
+}
+.section3part2 .section4-h .close-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 30px;
+  color: #000;
+}
+body.dark-mode .section4 .section4-h .close-btn{
+  color:white;
+}
+.section4 .cus-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 100%;
+    gap: 20px;
+}
+.section4 .cus-profile img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.section4 .cus-profile .cus-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section4 .orders{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+  gap: 10px;
+}
+.section4 .orders > div{
+  height: 50px;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.section4 .current-status{
+  height: 30vh;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+}
+.section4 .current-status .h{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 300px;
+}
+.section4 .current-status .status-msg{
+  height: 20vh;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  border: 1px solid gray;
+  border-style:dashed;
+}
+.section4 .address{
+  height: 10vh;
+  align-items: center;
+  padding-left: 30px;
+  display: flex;
+  gap: 30px;
+}
+.section4 .address h4{
+  display: flex;
+  height: 5vh;
+  width: 80px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.section4 .address-input{
+  display: flex;
+  height: 25vh;
+  justify-content: center;
+  gap: 300px;
+}
+.section4 .address-input i{
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+}
+body.dark-mode .section4 .address-input i{
+  color:white;
+}
+.section4 .address-input .ai{
+  display: flex;
+  gap: 5px;
+}
+</style>
+</head>
+<body>
+  <div class="section">
+    <div class="section1" id="section-1">
+      <div class="header1">
+        <img src="/Images/whatsapp.png" alt="logo">
+        <h2>Whatsapp</h2>
+      </div>
+      <div class="whatsappsidebar">
+        <ul>
+          <li>
+            <a href="#"  id="messages-button">
+              <i class='bx bx-chat'></i>
+              <span class="items">Messages</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-cog'></i>
+              <span class="items">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-palette'></i>
+              <span class="items" id="theme-toggle">Dark</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="redirectToMainPage()">
+              <i class='bx bx-arrow-back'></i>
+              <span class="items">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="section2" id="section-2">
+      <form action="">
+        <div class="search">
+          <a href="#"><i class='bx bx-search-alt-2'></i></a>
+          <input type="text" id="search-bar" placeholder="Search">
+        </div>
+      </form>
+      <div class="head">
+        <a href="#">
+          <i class='bx bx-check-double'></i>
+          <span class="tool-tip">Read</span>
+        </a>
+        <a href="#">
+          <i class='bx bx-check'></i>
+          <span class="tool-tip">Unread</span>
+        </a>
+        <a href="#">
+          <i class='bx bx-send'></i>
+          <span class="tool-tip">Send</span>
+        </a>
+      </div>
+      <div class="chatarea" id="chat-area">
+        <ul class="ul" id="contact-list">
+        </ul>
+      </div>
+    </div>
+    <div id="main-content">
+        <div class="default-message" id="default-message">
+          <a href="#"><i class='bx bxs-chat'></i></a>
+          <h3>Select a conversation or start a new chat</h3>
+        </div> 
+        <div class="contact-response" id="contact-response">
+          <div class="section3">
+            <div class="section3part1">
+              <div class="msghead">
+                <img src="/Images/defaultprofile.png" alt="">
+                <div class="name" id="name">
+                  <h3 id="profile-name">Profile name</h3>
+                  <h5>Online</h5>               
+                </div>
+                <div id="delete-options" style="display:none; width: 80%; align-items: center; justify-content: center; gap: 10px; margin-top: 10px; margin-bottom: 10px;">
+                  <button id="delete-for-me" style="padding: 10px 20px; background-color: #ff4d4d; color: white; border: none; border-radius: 5px; cursor: pointer;">Delete for Me</button>
+                  <button id="delete-for-everyone" style="padding: 10px 20px; background-color: #34B7F1; color: white; border: none; border-radius: 5px; cursor: pointer;">Delete for Everyone</button>
+                </div>   
+                <a href="#"id="clear-chat-btn"><i class='bx bxs-message-square-x'></i></a>
+              </div>
+              <div class="conversation" id="conversation"></div>
+              <div class="chat-input">
+                <div class="icons-1">
+                  <input type="file" id="file-input" style="display: none;" accept="image/*,video/*,.pdf,.doc,.docx" />
+                  <a href="#" id="camera-icon"><i class='bx bxs-camera'></i></a>
+                </div>
+                <input type="text" id="chat-input" placeholder="Message">
+                <div class="icons">
+                  <a href="#" id="record-btn"><i class='bx bx-microphone'></i></a>
+                  <a href="#" id="stop-btn" style="display: none;"><i class='bx bx-microphone-off'></i></a>
+                  <a href="#" id="send-btn" onclick="sendMessage()"><i class='bx bx-send'></i></a>
+                  <!-- <audio id="tick-sound" src="tick-sound.mp3" preload="auto"></audio> -->
+                </div>
+              </div>
+            </div>
+            <div class="section3part2" id="section3part2">
+              <div class="section4" >
+                <div class="section4-h">
+                  <div class="p">
+                    <h3>Profile</h3>
+                  </div>
+                  <span class="close-btn" id="close-btn">&times;</span>
+                </div>
+                <div class="cus-profile">
+                  <img src="/Images/defaultprofile.png" alt="">
+                  <div class="cus-details">
+                    <h4 id="profile-name2">Name</h4>
+                    <h6>Mobile No</h6>
+                  </div>
+                </div>
+                <div class="orders">
+                  <div class="o1">
+                    <h5>Orders Count</h5>
+                    <h5>Value</h5>
+                  </div>
+                  <div class="o2">
+                    <h5>Total order value</h5>
+                    <h5>Value</h5>
+                  </div>
+                  <div class="o3">
+                    <h5>Wallet</h5>
+                    <h5>Value</h5>
+                  </div>
+                </div>
+                <div class="current-status">
+                  <div class="h">
+                    <h4>Last Order</h4>
+                    <a href="#"><i class='bx bx-search-alt-2'></i></a>
+                  </div>
+                  <div class="status-msg">
+                    <h5>No Recent order associated with current user found. Please use Assisted sales to create one</h5>
+                  </div>
+                </div>
+                <div class="address">
+                  <h4>Address</h4>
+                  <h4>Note</h4>
+                </div>
+                <div class="address-input">
+                  <div class="ai">
+                  <a href="#"><i class='bx bxs-home'></i></a>
+                  <h5>Address</h5>
+                </div>
+                <a href="#"><i class='bx bxs-edit-alt'></i></a>
+              </div>
+    
+            </div>
+            
+          </div>
+
+          
+        </div>
+
+    </div>
+
+  </div>
+<script>
+  
+document.addEventListener('DOMContentLoaded', () => {
+  const contacts = [
+    { name: 'John Doe' },
+    { name: 'Jane Smith' },
+    { name: 'Alice Johnson' },
+    { name: 'Bob Brown' },
+    { name: 'Charlie Davis' },
+    { name: 'John Doe' },
+    { name: 'Jane Smith' },
+    { name: 'Alice Johnson' },
+    { name: 'Bob Brown' },
+    { name: 'Charlie Davis' },
+    { name: 'John Doe' },
+    { name: 'Jane Smith' },
+    { name: 'Alice Johnson' },
+    { name: 'Bob Brown' },
+    { name: 'Charlie Davis' },
+  ];
+
+  const contactList = document.getElementById('contact-list');
+  const searchBar = document.getElementById('search-bar');
+
+  function renderContacts(filteredContacts) {
+    contactList.innerHTML = '';
+    filteredContacts.forEach(contact => {
+      const li = document.createElement('li');
+
+      const profileImage = document.createElement('div');
+      profileImage.className = 'profile-image';
+      profileImage.textContent = contact.name.charAt(0);
+
+      li.appendChild(profileImage);
+      li.appendChild(document.createTextNode(contact.name));
+
+      li.addEventListener('click', () => openChat(contact.name));
+      contactList.appendChild(li);
+    });
+  }
+
+  const profileName = document.getElementById('name');
+  const section3part2 = document.getElementById('section3part2');
+  const closeBtn = document.getElementById("close-btn");
+
+  profileName.addEventListener('click', function() {
+    section3part2.style.width = "51vw";
+  });
+  closeBtn.addEventListener("click", function() {
+    section3part2.style.width = "0";
+  });
+
+  const chatInput = document.getElementById('chat-input');
+  if (chatInput) {
+    chatInput.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        sendMessage();
+        event.preventDefault(); 
+      }
+    });
+  }
+
+  renderContacts(contacts);
+
+  searchBar.addEventListener('input', (event) => {
+    const searchText = event.target.value.toLowerCase();
+    const filteredContacts = contacts.filter(contact => 
+      contact.name.toLowerCase().includes(searchText)
+    );
+    renderContacts(filteredContacts);
+  });
+
+  const recordBtn = document.getElementById('record-btn');
+  const stopBtn = document.getElementById('stop-btn');
+  const conversationArea = document.getElementById('conversation');
+  let mediaRecorder;
+  let audioChunks = [];
+
+  function startRecording() {
+    navigator.mediaDevices.getUserMedia({ audio: true })
+      .then(stream => {
+        mediaRecorder = new MediaRecorder(stream);
+        mediaRecorder.start();
+
+        mediaRecorder.addEventListener('dataavailable', event => {
+          audioChunks.push(event.data);
+        });
+
+        mediaRecorder.addEventListener('stop', () => {
+          const audioBlob = new Blob(audioChunks, { type: 'audio/mp3' });
+          const audioUrl = URL.createObjectURL(audioBlob);
+          const audio = document.createElement('audio');
+          audio.controls = true;
+          audio.src = audioUrl;
+
+          const audioContainer = document.createElement('div');
+          audioContainer.className = 'voice-message';
+          audioContainer.appendChild(audio);
+
+          conversationArea.appendChild(audioContainer);
+
+          audioChunks = [];
+        });
+
+        recordBtn.style.display = 'none';
+        stopBtn.style.display = 'inline';
+      })
+      .catch(error => {
+        console.error('Error accessing microphone:', error);
+      });
+  }
+
+  function stopRecording() {
+    if (mediaRecorder) {
+      mediaRecorder.stop();
+    }
+    recordBtn.style.display = 'inline';
+    stopBtn.style.display = 'none';
+  }
+
+  recordBtn.addEventListener('click', startRecording);
+  stopBtn.addEventListener('click', stopRecording);
+
+
+
+  const fileInput = document.getElementById('file-input');
+  const cameraIcon = document.getElementById('camera-icon');
+
+  cameraIcon.addEventListener('click', () => {
+    fileInput.click(); 
+  });
+
+  fileInput.addEventListener('change', (event) => {
+    const file = event.target.files[0]; 
+    if (file) {
+      const fileType = file.type;
+      let fileElement;
+
+      if (fileType.startsWith('image/')) {
+        const img = document.createElement('img');
+        img.src = URL.createObjectURL(file);
+        img.alt = file.name;
+        img.className = 'uploaded-image';
+        fileElement = img;
+      } else if (fileType.startsWith('video/')) {
+        const video = document.createElement('video');
+        video.src = URL.createObjectURL(file);
+        video.controls = true;
+        video.className = 'uploaded-video';
+        fileElement = video;
+      } 
+      else if (fileType.endsWith('pdf') || fileType.endsWith('doc') || fileType.endsWith('docx')) {
+  const file = event.target.files[0];
+  if (file) {
+    const fileURL = URL.createObjectURL(file);
+    const conversation = document.getElementById('conversation');
+    
+    if (file.type.match('application/pdf') || file.name.match(/\.(doc|docx)$/i)) {
+      // Create a styled document message
+      const docMessage = document.createElement('div');
+      docMessage.className = 'document-message';
+
+      const docIcon = document.createElement('div');
+      docIcon.className = 'document-icon';
+      docIcon.textContent = '📄';
+
+      const docDetails = document.createElement('div');
+      docDetails.className = 'document-details';
+
+      const docFilename = document.createElement('div');
+      docFilename.className = 'document-filename';
+      docFilename.textContent = file.name;
+
+      const docFilesize = document.createElement('div');
+      docFilesize.className = 'document-filesize';
+      docFilesize.textContent = `${(file.size / 1024 / 1024).toFixed(2)} MB`;
+
+      const downloadLink = document.createElement('a');
+      downloadLink.className = 'document-download';
+      downloadLink.href = fileURL;
+      downloadLink.textContent = 'Download';
+      downloadLink.download = file.name;
+
+      docDetails.appendChild(docFilename);
+      docDetails.appendChild(docFilesize);
+      docDetails.appendChild(downloadLink);
+
+      docMessage.appendChild(docIcon);
+      docMessage.appendChild(docDetails);
+
+      conversation.appendChild(docMessage);
+      fileElement=docMessage
+    }
+  }
+// });
+      }
+
+      if (fileElement) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = 'message sent';
+        messageDiv.appendChild(fileElement);
+
+        const timestampSpan = document.createElement('span');
+        timestampSpan.className = 'timestamp';
+        const now = new Date();
+        timestampSpan.textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+        messageDiv.appendChild(timestampSpan);
+
+        conversationArea.appendChild(messageDiv);
+        conversationArea.scrollTop = conversationArea.scrollHeight;
+      }
+    }
+    const backgroundtoggleButton = document.getElementById('theme-toggle');
+const body = document.body;
+
+// Load saved theme from localStorage
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    body.classList.add(savedTheme);
+    updateButtonText(savedTheme);
+}
+
+backgroundtoggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    
+    const theme = body.classList.contains('dark-mode') ? 'dark-mode' : 'light-mode';
+    localStorage.setItem('theme', theme);
+    
+    updateButtonText(theme);
+});
+
+function updateButtonText(theme) {
+    if (theme === 'dark-mode') {
+        backgroundtoggleButton.textContent = 'Light';
+    } else {
+        backgroundtoggleButton.textContent = 'Dark';
+    }
+}
+
+  });
+
+
+
+  let selectedMessages = [];
+
+// Function to toggle selection of a message
+function toggleSelection(event) {
+  const message = event.currentTarget;
+  const messageId = message.dataset.messageId;
+
+  if (selectedMessages.includes(messageId)) {
+    message.classList.remove('selected');
+    selectedMessages = selectedMessages.filter(id => id !== messageId);
+  } else {
+    message.classList.add('selected');
+    selectedMessages.push(messageId);
+  }
+
+  toggleDeleteOptions();
+}
+
+// Show or hide delete options based on message selection
+function toggleDeleteOptions() {
+  const deleteOptions = document.getElementById('delete-options');
+  if (selectedMessages.length > 0) {
+    deleteOptions.style.display = 'flex';
+  } else {
+    deleteOptions.style.display = 'none';
+  }
+}
+
+// Delete selected messages
+function deleteMessages(deleteForEveryone) {
+  selectedMessages.forEach(messageId => {
+    const messageElement = document.querySelector(`[data-message-id="${messageId}"]`);
+    if (messageElement) {
+      if (deleteForEveryone) {
+        // Logic for deleting message for everyone (e.g., send request to server)
+        messageElement.remove();
+      } else {
+        // Logic for deleting message only for the current user
+        messageElement.remove();
+      }
+    }
+  });
+  selectedMessages = [];
+  toggleDeleteOptions();
+}
+
+// Attach event listeners to dynamically generated messages
+conversationArea.addEventListener('click', (event) => {
+  if (event.target.closest('.message')) {
+    toggleSelection(event);
+  }
+});
+
+// Add event listeners to delete buttons
+document.getElementById('delete-for-me').addEventListener('click', () => deleteMessages(false));
+document.getElementById('delete-for-everyone').addEventListener('click', () => deleteMessages(true));
+
+function createMessage(content, isSentByUser) {
+  const messageId = `message-${Date.now()}`; // Example unique ID
+  const messageElement = document.createElement('div');
+  messageElement.classList.add('message', isSentByUser ? 'sent' : 'received');
+  messageElement.dataset.messageId = messageId;
+
+  messageElement.innerHTML = `
+    <div class="content">${content}</div>
+    <div class="timestamp">12:34 PM</div>
+  `;
+  return messageElement;
+}
+
+const messagesContainer = document.querySelector('.conversation');
+    const deleteForMeBtn = document.getElementById('delete-for-me');
+    const deleteForEveryoneBtn = document.getElementById('delete-for-everyone');
+
+    // Toggle selection of messages
+    messagesContainer.addEventListener('click', function(event) {
+        const messageElement = event.target.closest('.message');
+        if (messageElement) {
+            messageElement.classList.toggle('selected-message');
+        }
+    });
+
+    // Delete selected messages for me
+    deleteForMeBtn.addEventListener('click', function() {
+        const selectedMessages = document.querySelectorAll('.message.selected-message');
+        selectedMessages.forEach(function(message) {
+            message.remove();
+        });
+        // hideDeleteButtons();
+    });
+
+    // Delete selected messages for everyone
+    deleteForEveryoneBtn.addEventListener('click', function() {
+        const selectedMessages = document.querySelectorAll('.message.selected-message');
+        selectedMessages.forEach(function(message) {
+            message.remove();
+        });
+        // hideDeleteButtons();
+    });
+
+    // Hide delete buttons after deletion
+    function hideDeleteButtons() {
+        deleteForMeBtn.style.display = 'none';
+        deleteForEveryoneBtn.style.display = 'none';
+    }
+
+
+
+
+});
+document.getElementById('clear-chat-btn').addEventListener('click', () => {
+    const conversation = document.getElementById('conversation');
+    conversation.innerHTML = ''; // Clears all messages in the conversation area
+});
+
+
+function openChat(contactName) {
+  const defaultMessage = document.getElementById('default-message');
+  const contactResponse = document.getElementById('contact-response');
+  const profileName = document.getElementById('profile-name');
+  const profileName2 = document.getElementById('profile-name2');
+
+  if (defaultMessage) {
+    defaultMessage.style.display = 'none';
+  }
+  if (contactResponse) {
+    setTimeout(() => {
+      contactResponse.style.display = 'flex';
+      if (profileName) {
+        profileName.textContent = contactName;
+      }
+      if (profileName2) {
+        profileName2.textContent = contactName;
+      }
+    }, 500);
+  }
+
+  const conversation = document.getElementById('conversation');
+  if (conversation) {
+    conversation.innerHTML = '';
+  }
+}
+
+function formatTimestamp(date) {
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  const ampm = hours >= 12 ? 'PM' : 'AM';
+  hours = hours % 12;
+  hours = hours ? hours : 12; 
+  minutes = minutes < 10 ? '0' + minutes : minutes;
+  return hours + ':' + minutes + ' ' + ampm;
+}
+
+function sendMessage() {
+  let fileElement;
+  const inputField = document.getElementById('chat-input');
+  const messageText = inputField.value.trim();
+  if (messageText === '') return;
+
+  const conversation = document.getElementById('conversation');
+  const messageDiv = document.createElement('div');
+  messageDiv.className = 'message sent';
+  messageDiv.id='data-id';
+
+  const contentSpan = document.createElement('span');
+  contentSpan.className = 'content';
+  contentSpan.textContent = messageText;
+
+  const timestampSpan = document.createElement('span');
+  timestampSpan.className = 'timestamp';
+  const now = new Date();
+  timestampSpan.textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+  messageDiv.appendChild(contentSpan);
+  messageDiv.appendChild(timestampSpan);
+
+  conversation.appendChild(messageDiv);
+  conversation.scrollTop = conversation.scrollHeight;
+
+  inputField.value = '';
+  const messageId = `message-${Date.now()}`; // Example unique ID
+  const messageElement = document.createElement('div');
+  messageElement.classList.add('message', isSentByUser ? 'sent' : 'received');
+  messageElement.dataset.messageId = messageId;
+
+  messageElement.innerHTML = `
+    <div class="content">${content}</div>
+    <div class="timestamp">12:34 PM</div>
+  `;
+  return messageElement;
+}
+
+function receiveMessage(messageText) {
+  const conversation = document.getElementById('conversation');
+  const messageDiv = document.createElement('div');
+  messageDiv.className = 'message received';
+  messageDiv.id='data-id';
+
+  const contentSpan = document.createElement('span');
+  contentSpan.className = 'content';
+  contentSpan.textContent = messageText;
+
+  const timestampSpan = document.createElement('span');
+  timestampSpan.className = 'timestamp';
+  timestampSpan.textContent = formatTimestamp(new Date());
+
+  messageDiv.appendChild(contentSpan);
+  messageDiv.appendChild(timestampSpan);
+
+  conversation.appendChild(messageDiv);
+  const messageId = `message-${Date.now()}`; // Example unique ID
+  const messageElement = document.createElement('div');
+  messageElement.classList.add('message', isSentByUser ? 'sent' : 'received');
+  messageElement.dataset.messageId = messageId;
+
+  messageElement.innerHTML = `
+    <div class="content">${content}</div>
+    <div class="timestamp">12:34 PM</div>
+  `;
+  return messageElement;
+}
+
+function redirectToMainPage() {
+  window.location.href = '../index.html';
+}
+
+function redirectToLoginPage() {
+  window.location.href = '../login.html';
+}
+
+   </script>
+</body>
+</html>

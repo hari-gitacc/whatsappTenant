@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    height:calc(100%-10px);
+    width: calc(100%-10px);
+    background-color: gray;
+    gap: 5px;
+    padding: 5px;
+    overflow: hidden;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    background-color: #333;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px
+  }
+  .header .input {
+    position: relative;
+  }
+  .field {
+    height: 5vh;
+    width: 50vw;
+    background-color: #d6dcdc;
+    border-radius: 20px;
+    color: black;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    outline: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .field::placeholder {
+    color: black;
+    padding: 10px;
+  }
+  .search-icon {
+    position: absolute;
+    top: 55%;
+    right: 2%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #131212;
+  }
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 25px;
+    height: 100%;
+    right: 20px; 
+    gap: 4px;
+    cursor: pointer;
+  }
+  .line {
+    background-color: white;
+    height: 3px;
+    width: 80%;
+  }
+.container .filters{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    background-color: #333;
+    padding-left: 50px;
+    border-radius: 10px;
+}
+.container .filters .fetch{
+    height: 14vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
+.container .filters .fetch .title{
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.container .filters .fetch .title span{
+    font-size: 20px;
+    color: white;
+}
+.container .filters .fetch .input{
+    height: 7vh;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 30px;
+}
+.container .filters .fetch .input input{
+    height: 65%;
+    width: 20%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 10px;
+}
+.container .filters .fetch .input button{
+    height: 60%;
+    width: 9%;
+    background-color: #1446C6;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.container .filters .submit{
+    height: 14vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.container .filters .submit .title{
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.container .filters .submit .title span{
+    font-size: 20px;
+    color:white;
+}
+.container .filters .submit .input{
+    height: 7vh;
+    display: flex;
+    gap: 30px;
+}
+.container .filters .submit .input input{
+    height: 65%;
+    width: 20%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 10px;
+}
+.container .filters .submit .input button{
+    height: 60%;
+    width: 7%;
+    background-color: #1446C6;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.container .products{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    background-color: #333;
+    overflow-y: scroll;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 40px;
+}
+  /* Style the scrollbar container */
+  .container .products::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+    height: 12px; /* Height of the horizontal scrollbar */
+}
+
+/* Style the scrollbar track (the part the thumb slides within) */
+.container .products::-webkit-scrollbar-track {
+    background: white; /* Background color of the track */
+    border-radius: 10px; /* Rounded corners of the track */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+.container .products::-webkit-scrollbar-thumb {
+    background: black; /* Color of the thumb */
+    border-radius: 10px; /* Rounded corners of the thumb */
+}
+
+/* Style the scrollbar thumb on hover */
+.container .products::-webkit-scrollbar-thumb:hover {
+    background: #1446C6; /* Color of the thumb when hovered */
+}
+.container .products .p{
+    height: 25vh;
+    width: 16vw;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 0px 2px 2px gray;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 5px;
+}
+.container .products .p .p-image{
+    height: 13vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .products .p .p-image img{
+    height: 100%;
+    width: 60%;
+}
+.container .products .p .p-name{
+    height: 3vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.container .products .p .p-name span{
+    color: #000000;
+}
+.container .products .p .p-size{
+    height: 3vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.container .products .p .p-size span{
+    color: gray;
+    font-size: 13px;
+}
+.container .products .p .p-qty{
+    height: 3vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.container .products .p .p-qty span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    height: 100%;
+    width: 20%;
+    font-size: 13px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
