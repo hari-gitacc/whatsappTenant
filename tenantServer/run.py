@@ -46,9 +46,3 @@ if __name__ == "__main__":
     watcher.run()
 
 
-#     OPENAI_API_KEY = 'sk-proj-eyhsvrDeYue1QeILfNgeT3BlbkFJ26zAd7rFuOXK5Cnjaiwy'
-# WHATSAPP_TOKEN="EAAOD5Uw0NY8BO5x7408nlMPq2H4PB2MHdhImZB2s2V2CIZADd91hIyGQIGoVZCZCmBb5wCejxZCD8N43ipFZBSs1QYTTADpEd9mDdiHx8ZAZB8FZAOTNyT8EJhMltFNOUGp4gM5L3lQgx0pVsdtgXsOlPhZAVOZAy1URXZCzZC80kfL2iiO6AqY89oNfZBcXvZAbyr844lg2hdX0DZCt9amkECQiekE9vYqZA1lQH9QzlFAr4"
-# WHATSAPP_PHONE_NUMBER_ID = "310868885445564"
-# VERIFY_TOKEN = "TechWhatsapp2024"
-# MONGO_URI='mongodb+srv://techvaseegrah:kL5RvAyrOQBVFQAc@cluster0.pbjj6kp.mongodb.net/F3-DB?retryWrites=true&w=majority&appName=Cluster0'
-# SITE_URL="https://wpsg.microbizware.com/"
