@@ -1,5 +1,5 @@
-from flask import Blueprint, request, jsonify, send_from_directory
-from controllers.messageController import handle_incoming_messages, verify_webhook
+from flask import Blueprint, request, send_from_directory
+from controllers.messageController import verify_webhook, handle_incoming_messages
 
 message_bp = Blueprint('message', __name__)
 
@@ -13,4 +13,3 @@ def webhook():
 @message_bp.route('/audio/<filename>')
 def serve_audio(filename):
     return send_from_directory('audio_files', filename)
-

@@ -1,108 +1,75 @@
-from flask import Flask, send_from_directory, request, jsonify
+from flask import Flask, make_response, request, jsonify
+from routes.auth_routes import auth_bp
 from routes.messageRoutes import message_bp
-from flask_cors import CORS
-from pymongo import MongoClient
-from werkzeug.security import generate_password_hash, check_password_hash
-from message_controller import handle_incoming_messages
-from bson import ObjectId
+from routes.tenant_routes import tenant_bp
+from utils.db import init_db
 import os
+from dotenv import load_dotenv
+from flask_cors import CORS
+import logging
+
+# Load environment variables
+load_dotenv()
+
+# Configure logging
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
-app.secret_key = 'security_key'
-CORS(app)
+app.config.from_object('config')
 
-# Ensure the audio_files directory exists
-os.makedirs('audio_files', exist_ok=True)
+# Initialize CORS with more specific settings
+CORS(app, resources={r"/*": {"origins": ["http://127.0.0.1:5500", "http://localhost:5500", "http://192.168.47.221"], "supports_credentials": True}})
 
-# Connect to MongoDB
-client = MongoClient("mongodb+srv://techvaseegrah:kL5RvAyrOQBVFQAc@cluster0.pbjj6kp.mongodb.net/whatsapp_commerce?retryWrites=true&w=majority&appName=Cluster0")
-db = client['whatsapp_commerce']
-users_collection = db['users']
+# Initialize database
+try:
+    init_db(app)
+    # Ensure the audio_files directory exists
+    os.makedirs('audio_files', exist_ok=True)
+except Exception as e:
+    logger.error("An error occurred during initialization:", exc_info=True)
 
+# Register blueprints
 app.register_blueprint(message_bp, url_prefix='/api')
+app.register_blueprint(tenant_bp, url_prefix='/tenant')
+
+@app.before_request
+def handle_preflight():
+    if request.method == "OPTIONS":
+        response = make_response()
+        response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+        response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
+        response.headers.add('Access-Control-Allow-Credentials', 'true')
+        return response
+
+@app.after_request
+def after_request(response):
+    # Remove any existing Access-Control-Allow-Origin headers
+    response.headers.pop('Access-Control-Allow-Origin', None)
+    
+    # Set the Access-Control-Allow-Origin header based on the request origin
+    origin = request.headers.get('Origin')
+    if origin in ['http://127.0.0.1:5500', 'http://localhost:5500', 'http://192.168.47.221']:
+        response.headers.add('Access-Control-Allow-Origin', origin)
+    
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+    response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
+    response.headers.add('Access-Control-Allow-Credentials', 'true')
+    return response
 
 @app.route('/')
 def index():
     return "Welcome to the Multi-Tenant Webhook Application!"
 
-@app.route('/audio/<filename>')
-def serve_audio(filename):
-    return send_from_directory('audio_files', filename)
+@app.errorhandler(500)
+def internal_server_error(error):
+    logger.error('Server Error: %s', str(error))
+    return jsonify(error="Internal Server Error"), 500
 
-@app.route('/register', methods=['POST'])
-def register():
-    data = request.get_json()
-
-    # Check if user already exists
-    if users_collection.find_one({"email": data['email']}):
-        return jsonify({"error": "User already exists"}), 400
-
-    # Hash the password before storing it
-    hashed_password = generate_password_hash(data['password'], method='sha256')
-
-    # Create a new user document
-    user = {
-        "email": data['email'],
-        "password": hashed_password,
-        "whatsapp_number": data.get('whatsappNumber'),
-        "access_token": data.get('accessToken'),
-        "verify_token": data.get('verifyToken')
-    }
-
-    # Insert the user document into MongoDB
-    users_collection.insert_one(user)
-
-    return jsonify({"message": "User registered successfully!"}), 201
-
-@app.route('/login', methods=['POST'])
-def login():
-    data = request.get_json()
-
-    # Find the user by email
-    user = users_collection.find_one({"email": data['email']})
-
-    if not user:
-        return jsonify({"error": "User not found"}), 404
-
-    # Check if the password matches
-    if not check_password_hash(user['password'], data['password']):
-        return jsonify({"error": "Invalid password"}), 401
-
-    # Return user data (except the password)
-    user_data = {
-        "email": user['email'],
-        "whatsapp_number": user.get('whatsapp_number'),
-        "access_token": user.get('access_token'),
-        "verify_token": user.get('verify_token')
-    }
-
-    return jsonify(user_data), 200
-
-@app.route('/webhook', methods=['GET', 'POST'])
-def webhook():
-    tenant_id = request.args.get('tenant_id')
-    tenant = users_collection.find_one({"_id": ObjectId(tenant_id)})
-    if not tenant:
-        return "Invalid tenant", 400
-
-    if request.method == 'GET':
-        return verify_webhook(tenant)
-    elif request.method == 'POST':
-        incoming_msg = request.get_json()
-        result = handle_incoming_messages(tenant, incoming_msg)
-        return jsonify(result), 200
-
-def verify_webhook(tenant):
-    mode = request.args.get('hub.mode')
-    token = request.args.get('hub.verify_token')
-    challenge = request.args.get('hub.challenge')
-
-    if mode and token:
-        if mode == 'subscribe' and token == tenant['verify_token']:
-            return challenge, 200
-        else:
-            return "Verification token mismatch", 403
-    return "Verification failed", 400
+@app.errorhandler(404)
+def not_found_error(error):
+    logger.error('Not Found: %s', str(error))
+    return jsonify(error="Not Found"), 404
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=80)
+    app.run(host="0.0.0.0", port=80, debug=True)

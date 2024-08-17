@@ -38,25 +38,15 @@
       </div>
     </div>
 
-    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+   
     <script>
       // Your web app's Firebase configuration
-      const firebaseConfig = {
-        apiKey: "AIzaSyBFjh1tv9Ix5HfpQ3TJRSnO-LhAgeBrL44",
-        authDomain: "whatsapp-tenant.firebaseapp.com",
-        projectId: "whatsapp-tenant",
-        storageBucket: "whatsapp-tenant.appspot.com",
-        messagingSenderId: "3734258642",
-        appId: "1:3734258642:web:8d20aefd23e8914f7c7e0b",
-        measurementId: "G-0MLGP2D7N0",
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-
+    
       document
         .getElementById("register-button")
         .addEventListener("click", function () {
+            const name = document.getElementById("username").value;
+
           const email = document.getElementById("email").value;
           const password = document.getElementById("password").value;
           const whatsappNumber =
@@ -65,23 +55,20 @@
           const verifyToken = document.getElementById("verify-token").value;
 
           // Register the user using Firebase Authentication
-          firebase
-            .auth()
-            .createUserWithEmailAndPassword(email, password)
-            .then((userCredential) => {
-              // Successfully created user
-              // Send the user data to your server
-              fetch("https://your-server-endpoint.com/register", {
+         
+              fetch("http://192.168.47.221:80/tenant", {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
                   email: email,
-                  whatsappNumber: whatsappNumber,
-                  accessToken: accessToken,
-                  verifyToken: verifyToken,
-                }),
+                  name: name,
+                  whatsapp_phone_number_id:whatsappNumber,
+                  whatsapp_token: accessToken,
+                  verify_token: verifyToken,
+                  password:password
+                })
               })
                 .then((response) => response.json())
                 .then((data) => {
@@ -100,7 +87,7 @@
               const errorMessage = error.message;
               alert("Failed to create account: " + errorMessage);
             });
-        });
+  
     </script>
   </body>
 </html>
